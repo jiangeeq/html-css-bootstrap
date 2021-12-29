@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style type="text/css">
+    /* 设置导航栏样式*/
+    nav {
+        width: 300px;
+    }
+
+    /*设置导航栏中每一项的样式*/
+    li {
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 35px;
+        line-height: 35px;
+        /*溢出元素内容区的内容会如何处理*/
+        overflow: hidden;
+    }
+
+    /*设置偶数行背景颜色透明度*/
+    li:nth-of-type(2n) {
+        background-color: rgba(82, 20, 20, 0.6);
+    }
+
+    /*鼠标悬停时背景色*/
+    li:hover {
+        background-color: #0099E5;
+    }
+
+    /*设置超链接样式*/
+    a {
+        /*文本的修饰,none:没有文本装饰*/
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        padding: 0 38px;
+    }
+</style>
+<body>
+<nav>
+    <ul>
+        <li><a href="#">java</a></li>
+        <li><a href="#">python</a></li>
+        <li><a href="#">html</a></li>
+        <li><a href="#">go</a></li>
+        <li><a href="#">android</a></li>
+    </ul>
+</nav>
+</body>
+</html>

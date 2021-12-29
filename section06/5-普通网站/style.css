@@ -1,0 +1,40 @@
+*:before,
+*:after {
+    /*规定应从父元素继承box-sizing属性的值*/
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+body {
+    width: 100%;
+    background: #fff;
+    font-family: 'Roboto Light', Serif;
+}
+
+a {
+    text-decoration: none;
+    /*过渡时长*/
+    transition: 0.5s all;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    /*把此元素放在父元素的中部*/
+    vertical-align: middle;
+}
+
+.clearfix {
+    /*清除浮动*/
+    clear: both;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<body>
+<div>
+    <form action="#" method="post" class="contact_form">
+        <ul>
+            <li class="usually">
+                <h2>用户注册</h2>
+            </li>
+            <li class="usually">
+                <span>昵称：</span>
+                <input type="text" id="name" name="name" autocomplete="off" required pattern="^[a-zA-Z0-9_-]{6,16}$">
+            </li>
+            <li class="usually">
+                <span>注册邮箱：</span>
+                <input type="text" id="mail" name="mail" required>
+            </li>
+            <li class="usually">
+                <span>密码：</span>
+                <input type="password" id="password" name="password" required pattern="^[0-9]$">
+            </li>
+            <li>
+                <span>性别：</span>
+                <label>男<input type="radio" name="sex" value="man"></label>
+                <label>女<input type="radio" name="sex" value="woman"></label>
+            </li>
+            <li class="usually">
+                <span>年龄：</span>
+                <input type="number" id="age" name="age" required>
+            </li>
+            <li>
+                <span>兴趣爱好：</span>
+                <label>足球<input type="checkbox" name="sex" value="zuqiu"></label>
+                <label>篮球<input type="checkbox" name="sex" value="basketball"></label>
+                <label>游泳<input type="checkbox" name="sex" value="swing"></label>
+                <label>唱歌<input type="checkbox" name="sex" value="sing"></label>
+                <label>跑步<input type="checkbox" name="sex" value="run"></label>
+                <label>瑜伽<input type="checkbox" name="sex" value="yujia"></label>
+            </li>
+            <li class="usually">
+                <span>自我介绍：</span>
+                <textarea rows="10" required></textarea>
+            </li>
+            <li>
+                <input class="submit" type="submit" value="立即注册"/>
+            </li>
+        </ul>
+    </form>
+</div>
+</body>
+<style>
+    body {
+        background: url("images/登录.png") no-repeat center center fixed;
+        /*保持图片本身的宽高比例，将图片缩放到正好完全覆盖定义的背景区域*/
+        background-size: cover;
+    }
+
+    .contact_form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .contact_form ul {
+        width: 750px;
+        /*清除默认样式*/
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .contact_form li {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .contact_form li:first-child,
+    .contact_form li:last-child {
+        border-bottom: 1px solid #777;
+    }
+
+    .contact_form span {
+        width: 150px;
+        /*把块元素转换为行内块元素*/
+        display: inline-block;
+    }
+
+    .usually input {
+        height: 20px;
+        width: 220px;
+        padding: 5px 8px;
+    }
+
+    *:focus {
+        outline: none;
+    }
+
+    .usually input, textarea {
+        background: url(./images/纯色.png) no-repeat 98% center;
+        box-shadow: 0 10px 15px #eee inset;
+        border-radius: 2px;
+    }
+
+    .contact_form textarea {
+        padding: 8px;
+        width: 300px;
+    }
+
+    /*元素获得焦点时，设置背景颜色为白色*/
+    .usually input:focus, textarea:focus {
+        background: #fff;
+    }
+
+    input[type=submit] {
+        margin-left: 156px;
+        background-color: #68b12f;
+        border: 1px solid #509111;
+        border-radius: 3px;
+        color: white;
+        padding: 6px 20px;
+        text-align: center;
+    }
+
+    /*鼠标悬停在按钮上，设置背景颜色透明度为0.85，鼠标指针变为小手*/
+    input[type=submit]:hover {
+        opacity: .85;
+        cursor: pointer;
+    }
+
+    .usually input:focus:invalid, textarea:focus:invalid {
+        background: url(./images/error.png) no-repeat 98% center;
+        box-shadow: 0 0 5px #d45252;
+    }
+
+    .usually input:required:valid, textarea:required:valid {
+        background: url(./images/right.png) no-repeat 98% center;
+        box-shadow: 0 0 5px #5cd053;
+        background-size: inherit;
+    }
+</style>
+</html>

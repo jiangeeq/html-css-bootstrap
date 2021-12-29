@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        background: url("images/登录.png") no-repeat center center fixed;
+        /*保持图片本身的宽高比例，将图片缩放到正好完全覆盖定义的背景区域*/
+        background-size: cover;
+        padding-top: 20px;
+    }
+
+    form {
+        width: 343px;
+        height: 200px;
+        margin: 0 auto;
+        border: 1px solid rgba(0, 0, 0, 1);
+        border-radius: 5px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    input {
+        width: 300px;
+        height: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+        margin-bottom: 10px
+    }
+
+    .user {
+        padding-top: 40px
+    }
+
+    .footer input {
+        width: 50px;
+        height: 34px;
+    }
+
+    /*鼠标放在按钮时指针变为小手*/
+    input[type=submit] {
+        cursor: pointer;
+    }
+
+    input:focus {
+        background-color: rgba(220, 23, 23, 0.2);
+        overflow: hidden;
+    }
+
+    .btn {
+        border-radius: 6px;
+    }
+
+    .btn:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+</style>
+<body>
+<form>
+    <div class="user">
+        <input type="text" name="name" placeholder="用户名">
+        <input type="password" name="password" placeholder="密码">
+    </div>
+    <div class="footer">
+        <input type="submit" name="submit" value="登录" class="btn">
+        <input type="submit" name="submit" value="注册" class="btn" formaction="8-2注册.html">
+    </div>
+</form>
+</body>
+</html>

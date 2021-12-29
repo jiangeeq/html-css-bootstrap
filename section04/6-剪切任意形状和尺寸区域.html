@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="cavsElem"></canvas>
+</body>
+<script>
+    var canvas = document.getElementById('cavsElem')
+    canvas.style.border = '1px solid black';
+    var context = canvas.getContext('2d')
+    // 绘制矩形
+    context.rect(50, 20, 200, 120)
+    context.stroke()
+    // 在clip()之后绘制圆形，只有被剪切区域内的圆形可见
+    context.clip()
+    context.fillStyle = 'green'
+    context.arc(200, 100, 70, 0, 2 * Math.PI, true)
+    context.fill()
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas" width="250px" height="150px" style="border:1px black solid"></canvas>
+<script>
+    var canvas = document.getElementById('canvas')
+    var context = canvas.getContext('2d')
+    context.strokeRect(112.5, 0, 30, 30)
+    context.fillRect(0, 0, 50, 50)
+    context.strokeRect(25, 25, 50, 50)
+    context.fillRect(50, 50, 50, 50)
+    context.strokeRect(75, 75, 50, 50)
+    context.fillRect(100, 100, 50, 50)
+
+    context.clearRect(110, 110, 30, 30)
+
+    context.strokeRect(125, 75, 50, 50)
+    context.fillRect(150, 50, 50, 50)
+    context.strokeRect(175, 25, 50, 50)
+    context.fillRect(200, 0, 50, 50)
+</script>
+
+</body>
+</html>

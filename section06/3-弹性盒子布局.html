@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            display: flex;
+            background-color: #999;
+            height: 80px;
+            /*flex-flow: column nowrap;*/
+            /*justify-content: space-around;*/
+            align-items: center;
+        }
+
+        .box div {
+            background-color: white;
+            border: 1px solid gray;
+            margin: 2px
+        }
+
+        .box div:nth-child(2) {
+            /*设置单独的子元素对齐排列方式*/
+            align-self: flex-end;
+        }
+
+        .one {
+            order: 3;
+            flex-grow: 1;
+        }
+
+        .two {
+            order: 1;
+        }
+
+        .three {
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+</div>
+</body>
+</html>

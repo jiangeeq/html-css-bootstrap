@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <canvas id="cavsElem" width="400" height="600">您的浏览器不支持Canvas</canvas>
+  <script>
+    var canvas = document.getElementById("cavsElem")
+    var context = canvas.getContext('2d')
+    context.lineWidth = '10'
+    context.strokeStyle = '#f00'
+    context.lineCap = 'round'
+    context.moveTo(10, 120)
+    context.lineTo(50, 120)
+    context.lineTo(10, 150)
+    context.lineTo(50, 150)
+    context.stroke()
+
+    context.beginPath()
+    context.strokeStyle = 'blue'
+    context.lineCap = 'butt'
+    context.moveTo(10, 180)
+    context.lineTo(50, 180)
+    context.lineTo(10, 210)
+    context.lineTo(50, 210)
+    // context.closePath()
+    context.stroke()
+
+    context.beginPath()
+    context.strokeStyle = 'pink'
+    context.lineCap = 'square'
+    context.moveTo(10, 240)
+    context.lineTo(50, 240)
+    context.lineTo(10, 280)
+    context.lineTo(50, 280)
+    context.stroke()
+  </script>
+</body>
+</html>

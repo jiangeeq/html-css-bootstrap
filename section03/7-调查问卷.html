@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    form {
+        width: 343px;
+        margin: 0 auto;
+        padding: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    ul, li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    ul li {
+        height: 50px;
+    }
+
+    .right {
+        float: right;
+        width: 180px;
+    }
+
+    input:focus {
+        background-color: sienna;
+        overflow: hidden;
+    }
+
+    form .footer {
+        text-align: center;
+    }
+
+    input[type=submit] {
+        width: 100px;
+        height: 30px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
+    .advise {
+        /*撑开li则上层容器也会跟着撑开*/
+        height: 150px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100px;
+    }
+</style>
+<body>
+<form action="#" method="post" autocomplete="on">
+    <ul>
+        <li>
+            <label>姓名</label>
+            <input class="right" type="text" value="张三" maxlength="6"/>
+        </li>
+        <li>
+            <label>出生日期</label>
+            <input class="right" type="date"/>
+        </li>
+        <li>
+            <label>请输入您的邮箱</label>
+            <input type="email" class="right" required/>
+        </li>
+        <li>
+            <label>请输入个人网址</label>
+            <input type="url" class="right" required/>
+        </li>
+        <li>
+            <label>性别</label>
+            <div class="right">
+                <input type="radio" name="male"/><label>男</label>
+                <input type="radio" name="female"/><label>女</label>
+            </div>
+        </li>
+        <li>
+            <label>体重</label>
+            <div class="right">
+                <input type="number" name="tithing"/><label>kg</label>
+            </div>
+        </li>
+        <li>
+            <label>兴趣</label>
+            <div class="right">
+                <input type="checkbox" name="sing"/><label>唱歌</label>
+                <input type="checkbox" name="dance"/><label>跳舞</label>
+                <input type="checkbox" name="swing"/><label>游泳</label>
+            </div>
+        </li>
+        <li>
+            <label>喜欢的颜色</label>
+            <input class="right" type="color"/><label>kg</label>
+        </li>
+        <li>
+            <label>上传头像</label>
+            <input class="right" type="file">
+        </li>
+        <li class="advise">
+            <label>您的建议</label>
+            <textarea name="opinion" cols="30" rows="10"></textarea>
+        </li>
+        <li class="footer">
+            <input type="submit" value="提交"/>
+        </li>
+    </ul>
+</form>
+</body>
+</html>
