@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/grapes.min.css">
+    <script src="./js/grapes.min.js"></script>
+</head>
+<body>
+<!--面板和按钮-->
+<div class="panel__top">
+    <div class="panel__basic-actions"></div>
+    <div class="panel__devices"></div>
+    <div class="panel__switcher"></div>
+</div>
+<!--图层管理器。它是结构节点的树状概览-->
+<div class="editor-row">
+    <div class="editor-canvas">
+        <!--画布-->
+        <div id="gjs">...</div>
+    </div>
+    <div class="panel__right">
+        <div class="layers-container"></div>
+        <div class="styles-container"></div>
+        <div class="traits-container"></div>
+    </div>
+</div>
+<!--添加块-->
+<div id="blocks"></div>
+<br/>
+<div id="some-id"></div>
+</body>
+<style>
+    .panel__top {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        position: initial;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .panel__basic-actions {
+        position: initial;
+    }
+
+    .editor-row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        height: 300px;
+    }
+
+    .editor-canvas {
+        flex-grow: 1;
+    }
+
+    .panel__right {
+        flex-basis: 230px;
+        position: relative;
+        overflow-y: auto;
+    }
+
+    .panel__switcher {
+        position: initial;
+    }
+
+    .panel__devices {
+        position: initial;
+    }
+
+    /* We can remove the border we've set at the beginnig */
+    #gjs {
+        border: none;
+    }
+
+    /* Theming */
+
+    /* Primary color for the background */
+    .gjs-one-bg {
+        background-color: #78366a;
+    }
+
+    /* Secondary color for the text color */
+    .gjs-two-color {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* Tertiary color for the background */
+    .gjs-three-bg {
+        background-color: #ec5896;
+        color: white;
+    }
+
+    /* Quaternary color for the text color */
+    .gjs-four-color,
+    .gjs-four-color-h:hover {
+        color: #ec5896;
+    }
+
+    /* Reset some default styling */
+    .gjs-cv-canvas {
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gjs-block {
+        width: auto;
+        height: auto;
+        min-height: auto;
+    }
+</style>
+<script>
+    function supportImport() {
+        return 'import' in document.createElement('link');
+    }
+
+    if (supportImport()) {
+        console.log('浏览器支持import特性');
+    } else {
+        console.log('浏览器不支持import特性');
+        // 引入polyfill
+        var e = document.createElement('script');
+        e.src = './js/webcomponents-bundle.js';
+        document.body.appendChild(e);
+        console.log('导入成功webcomponentsjs')
+    }
+</script>
+<script type="module">
+    import zh from './js/zh.js';
+
+    console.log('zh', zh)
+    // 自定义组件
+    const myNewComponentTypes = editor => {
+        editor.DomComponents.addType('my-input-type', {
+            // Make the editor understand when to bind `my-input-type`
+            isComponent: el => el.tagName === 'INPUT',
+            // Model definition
+            model: {
+                // Default properties
+                defaults: {
+                    // 如果未指定div将使用这个作为html标签
+                    tagName: 'input',
+                    draggable: 'form, form *', // Can be dropped only inside `form` elements
+                    droppable: false, // Can't drop other elements inside
+                    attributes: { // Default attributes
+                        type: 'text',
+                        name: 'default-name',
+                        placeholder: '我是自定义组件',
+                    },
+                    traits: [
+                        'name',
+                        'placeholder',
+                        {
+                            type: 'select', // Type of the trait
+                            label: 'Type', // The label you will see in Settings
+                            name: 'type', // The name of the attribute/property to use on component
+                            options: [
+                                {id: 'text', name: 'Text'},
+                                {id: 'email', name: 'Email'},
+                                {id: 'password', name: 'Password'},
+                                {id: 'number', name: 'Number'},
+                            ]
+                        },
+                        {type: 'checkbox', name: 'required'},
+                    ],
+                },
+                init() {
+                    // 如果您需要对特征的某些变化做出反应，您可以订阅他们的属性侦听器
+                    this.on('change:someprop', this.handlePropChange);
+                    // Listen to any attribute change
+                    this.on('change:attributes', this.handleAttrChange);
+                    // Listen to title attribute change
+                    this.on('change:attributes:title', this.handleTitleChange);
+                },
+
+                handlePropChange() {
+                    const {someprop} = this.props();
+                    console.log('New value of someprop: ', someprop);
+                },
+
+                handleAttrChange() {
+                    console.log('Attributes updated: ', this.getAttributes());
+                },
+
+                handleTitleChange() {
+                    console.log('Attribute title updated: ', this.getAttributes().title);
+                },
+            }
+        });
+    }
+    const editor = grapesjs.init({
+        // Indicate where to init the editor. You can also pass an HTMLElement
+        container: '#gjs',
+        i18n: {
+            // locale: 'en', // default locale
+            // detectLocale: true, // by default, the editor will detect the language
+            // localeFallback: 'en', // default fallback
+            messages: {zh},
+        },
+        plugins: [myNewComponentTypes],
+        // Get the content for the canvas directly from the element
+        // As an alternative we could use: `components: '<h1>Hello World Component!</h1>'`,
+        fromElement: true,
+        // Size of the editor
+        height: '300px',
+        width: 'auto',
+        components: `
+            <div class="class-a">Element A</div>
+            <div class="class-a class-b">Element A-B</div>
+            <div class="class-a class-b class-c">Element A-B-C</div>
+          `,
+        style: `
+            .class-a { color: red }
+            .class-b { color: green }
+            .class-c { color: blue }`,
+        // Disable the storage manager for the moment
+        storageManager: false,
+        layerManager: {
+            appendTo: '.layers-container'
+        },
+        commands: {
+            defaults: [
+                {
+                    id: 'jpsite-web-edit-builder',
+                    run() {
+                        alert('this is jpsite-web-edit-builder')
+                    }
+                }
+            ]
+        },
+        storageManager: {
+            id: 'gjs-',             // Prefix identifier that will be used inside storing and loading
+            type: 'local',          // Type of the storage
+            autosave: false,         // Store data automatically
+            autoload: false,         // Autoload stored data on init
+            stepsBeforeSave: 1,     // If autosave enabled, indicates how many changes are necessary before store method is triggered
+            storeComponents: true,  // Enable/Disable storing of components in JSON format
+            storeStyles: true,      // Enable/Disable storing of rules in JSON format
+            storeHtml: true,        // Enable/Disable storing of components as HTML string
+            storeCss: true,         // Enable/Disable storing of rules as CSS string
+        },
+        mediaCondition: 'min-width', // default is `max-width`
+        deviceManager: {
+            devices: [{
+                name: 'Mobile',
+                width: '320',
+                widthMedia: '',
+            }, {
+                name: 'Desktop',
+                width: '',
+                widthMedia: '1024',
+            }]
+        },
+        // Avoid any default panel
+        panels: {
+            defaults: [
+                /*{
+                    id: 'layers',
+                    el: '.panel__right',
+                    // Make the panel resizable
+                    resizable: {
+                        maxDim: 350,
+                        minDim: 200,
+                        tc: 0, // Top handler
+                        cl: 1, // Left handler
+                        cr: 0, // Right handler
+                        bc: 0, // Bottom handler
+                        // Being a flex child we need to change `flex-basis` property
+                        // instead of the `width` (default)
+                        keyWidth: 'flex-basis',
+                    },
+                },*/
+                {
+                    id: 'panel-switcher',
+                    el: '.panel__switcher',
+                    buttons: [{
+                        id: 'show-layers',
+                        active: true,
+                        label: 'Layers',
+                        command: 'show-layers',
+                        // Once activated disable the possibility to turn it off
+                        togglable: false,
+                    }, {
+                        id: 'show-style',
+                        active: true,
+                        label: 'Styles',
+                        command: 'show-styles',
+                        togglable: false,
+                    }, {
+                        id: 'show-traits',
+                        active: true,
+                        label: 'Traits',
+                        command: 'show-traits',
+                        togglable: false,
+                    }],
+                },
+                {
+                    id: 'panel-devices',
+                    el: '.panel__devices',
+                    buttons: [{
+                        id: 'device-desktop',
+                        label: 'D',
+                        command: 'set-device-desktop',
+                        active: true,
+                        togglable: false,
+                    }, {
+                        id: 'device-mobile',
+                        label: 'M',
+                        command: 'set-device-mobile',
+                        togglable: false,
+                    }],
+                }
+            ]
+        },
+        traitManager: {
+            appendTo: '.traits-container',
+        },
+        blockManager: {
+            appendTo: '#blocks',
+            blocks: [
+                {
+                    id: 'section', // id is mandatory
+                    label: '<b>Section</b>', // You can use HTML/SVG inside labels
+                    attributes: {class: 'gjs-block-section'},
+                    content: `<section>
+          <h1>This is a simple title</h1>
+          <div>This is just a Lorem text: Lorem ipsum dolor sit amet</div>
+        </section>`,
+                }, {
+                    id: 'text',
+                    label: 'Text',
+                    content: '<div data-gjs-type="text">Insert your text here</div>',
+                }, {
+                    id: 'image',
+                    label: 'Image',
+                    // Select the component once it's dropped
+                    select: true,
+                    // You can pass components as a JSON instead of a simple HTML string,
+                    // in this case we also use a defined component type `image`
+                    content: {type: 'image'},
+                    // This triggers `active` event on dropped components and the `image`
+                    // reacts by opening the AssetManager
+                    activate: true,
+                }, {
+                    id: 'svg',
+                    label: 'Svg',
+                    media: `<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path d="M8.5,13.5L11,16.5L14.5,12L19,18H5M21,19V5C21,3.89 20.1,3 19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19Z" />
+        </svg>`,
+                    // Use `image` component
+                    content: {type: 'my-cmp', prop1: 'value1-EXT', prop2: 'value2-EXT'},
+                    // The component `image` is activatable (shows the Asset Manager).
+                    // We want to activate it once dropped in the canvas.
+                    activate: true,
+                    // select: true, // Default with `activate: true`
+                }
+
+            ]
+        },
+        // The Selector Manager allows to assign classes and
+        // different states (eg. :hover) on components.
+        // Generally, it's used in conjunction with Style Manager
+        // but it's not mandatory
+        selectorManager: {
+            appendTo: '.styles-container'
+        },
+        assetManager: {
+            assets: [
+                'http://placehold.it/350x250/78c5d6/fff/image1.jpg',
+                // Pass an object with your properties
+                {
+                    type: 'image',
+                    src: 'http://placehold.it/350x250/459ba8/fff/image2.jpg',
+                    height: 350,
+                    width: 250,
+                    name: 'displayName'
+                },
+                {
+                    // As the 'image' is the base type of assets, omitting it will
+                    // be set as `image` by default
+                    src: 'http://placehold.it/350x250/79c267/fff/image3.jpg',
+                    height: 350,
+                    width: 250,
+                    name: 'displayName'
+                },
+            ],
+            // 当上传结束时，默认情况下（通过 config 参数autoAdd: 1），编辑器希望在data键中接收上传资产的 JSON作为响应，并尝试将它们添加到主集合中。
+            data: [
+                'https://.../image.png',
+                // ...
+                {
+                    src: 'https://.../image2.png',
+                    type: 'image',
+                    height: 100,
+                    width: 200,
+                },
+                // ...
+            ]
+        },
+        styleManager: {
+            appendTo: '.styles-container',
+            sectors: [{
+                name: 'Dimension',
+                open: false,
+                // Use built-in properties从可用的内置对象创建通用属性
+                // https://grapesjs.com/docs/modules/Style-manager.html#built-in-properties
+                buildProps: ['width', 'min-height', 'padding'],
+                // Use `properties` to define/override single property
+                properties: [
+                    {
+                        // Type of the input,
+                        // options: integer | radio | select | color | slider | file | composite | stack
+                        type: 'integer',
+                        name: 'The width', // Label for the property
+                        property: 'width', // CSS property (if buildProps contains it will be extended)
+                        units: ['px', '%'], // Units, available only for 'integer' types
+                        defaults: 'auto', // Default value
+                        min: 0, // Min value, available only for 'integer' types
+                    }
+                ]
+            }, {
+                name: 'Extra',
+                open: false,
+                buildProps: ['background-color', 'box-shadow', 'custom-prop'],
+                properties: [
+                    {
+                        id: 'custom-prop',
+                        name: 'Custom Label',
+                        property: 'font-size',
+                        type: 'select',
+                        defaults: '32px',
+                        // List of options, available only for 'select' and 'radio'  types
+                        options: [
+                            {value: '12px', name: 'Tiny'},
+                            {value: '18px', name: 'Medium'},
+                            {value: '32px', name: 'Big'},
+                        ],
+                    }
+                ]
+            }]
+        },
+    });
+    // Your components
+    editor.Components.addType('my-cmp', {
+        model: {
+            defaults: {
+                prop1: 'value1',
+                prop2: 'value2',
+            }
+        }
+    });
+    editor.on('component:selected', (component) => {
+// Get the View
+        const view = component.getView();
+// Get the DOM element
+        const el = component.getEl();
+        const type = component.get('type'); // eg. 'image'
+        console.log('view', view)
+        console.log('el', el)
+        console.log('type', type)
+    })
+    // 更改视口的大小的监听器
+    editor.on('change:device', () => console.log('Current device: ', editor.getDevice()));
+    editor.on('run:export-template:before', opts => {
+        console.log('Before the command run');
+        if (0 /* some condition */) {
+            opts.abort = 1;
+        }
+    });
+    editor.on('run:export-template', () => console.log('After the command run'));
+    editor.on('abort:export-template', () => console.log('Command aborted'));
+    // Set initial device as Mobile
+    editor.setDevice('Mobile');
+    editor.addComponents(`<input name="my-test" title="hello"/>`)
+    const component = editor.addComponents(`<div>
+  <img src="https://vfiles-raw.gtimg.cn/vupload/20201015/tag_vip_x2.png" />
+  <span title="foo">Hello world!!!</span>
+</div>`)[0];
+    // 直接将块创建为组件
+    const blockManager = editor.BlockManager;
+    const h1Block = blockManager.add('h1-block', {
+        label: 'Heading',
+        content: '<h1>Put your title here</h1>',
+        category: 'my block',
+        attributes: {
+            title: 'Insert h1 block'
+        }
+    }, {
+        external: false,
+        ignoreCategories: false
+    });
+    blockManager.remove('h1-block');
+    // 你也可以在主块容器之外渲染你的块
+    const newBlocksEl = blockManager.render(h1Block, {external: true});
+    document.getElementById('some-id').appendChild(newBlocksEl);
+    // The wrapper is the root Component
+    const wrapper = editor.DomComponents.getWrapper();
+    wrapper.set('style', {'background-color': 'gray'});
+    wrapper.set('attributes', {'title': 'Hello!'});
+    console.log('warpper', wrapper)
+    // 通过查询字符串查找内部组件。 注意：此方法仅适用于已呈现的组件
+    const myComponent = wrapper.find('div')[0];
+    if (myComponent != undefined && myComponent.length > 0) {
+        myComponent.components().forEach(component => {
+            console.log(component)
+        });
+    }
+    editor.Panels.addPanel({
+        id: 'panel-top',
+        el: '.panel__top',
+    });
+    editor.Panels.addPanel({
+        id: 'basic-actions',
+        el: '.panel__basic-actions',
+        buttons: [
+            {
+                id: 'visibility',
+                active: true, // active by default
+                className: 'btn-toggle-borders',
+                label: '<u>B</u>',
+                command: 'sw-visibility', // Built-in command
+            }, {
+                id: 'export',
+                className: 'btn-open-export',
+                label: 'Exp',
+                command: 'export-template',
+                context: 'export-template', // For grouping context of buttons from the same panel
+            }, {
+                id: 'show-json',
+                className: 'btn-show-json',
+                label: 'JSON',
+                context: 'show-json',
+                command(editor) {
+                    editor.Modal.setTitle('Components JSON')
+                        .setContent(`<textarea style="width:100%; height: 250px;">
+            ${JSON.stringify(editor.getComponents())}
+          </textarea>`)
+                        .open();
+                },
+            }
+        ],
+    });
+    // Define commands
+    editor.Commands.add('show-layers', {
+        getRowEl(editor) {
+            return editor.getContainer().closest('.editor-row');
+        },
+        getLayersEl(row) {
+            return row.querySelector('.layers-container')
+        },
+
+        run(editor, sender) {
+            const lmEl = this.getLayersEl(this.getRowEl(editor));
+            lmEl.style.display = '';
+        },
+        stop(editor, sender) {
+            const lmEl = this.getLayersEl(this.getRowEl(editor));
+            lmEl.style.display = 'none';
+        },
+    });
+    editor.Commands.add('show-styles', {
+        getRowEl(editor) {
+            return editor.getContainer().closest('.editor-row');
+        },
+        getStyleEl(row) {
+            return row.querySelector('.styles-container')
+        },
+
+        run(editor, sender) {
+            const smEl = this.getStyleEl(this.getRowEl(editor));
+            smEl.style.display = '';
+        },
+        stop(editor, sender) {
+            const smEl = this.getStyleEl(this.getRowEl(editor));
+            smEl.style.display = 'none';
+        },
+    });
+    editor.Commands.add('show-traits', {
+        getTraitsEl(editor) {
+            const row = editor.getContainer().closest('.editor-row');
+            return row.querySelector('.traits-container');
+        },
+        run(editor, sender) {
+            this.getTraitsEl(editor).style.display = '';
+        },
+        stop(editor, sender) {
+            this.getTraitsEl(editor).style.display = 'none';
+        },
+    });
+    editor.Commands.add('set-device-desktop', {
+        run: editor => editor.setDevice('Desktop')
+    });
+    editor.Commands.add('set-device-mobile', {
+        run: editor => editor.setDevice('Mobile')
+    });
+    //调用那个命令
+    // editor.runCommand('jpsite-web-edit-builder');
+
+    // 如果您正在为 GrapesJS 创建插件，请尽可能多地使用命令，这将允许更高的可重用性和对您的逻辑的控制。
+
+    const openModal = () => {
+        editor.Modal.open({
+            title: 'My title', // string | HTMLElement
+            content: 'My content', // string | HTMLElement
+        });
+    };
+    document.body.insertAdjacentHTML('afterbegin', `
+    <button onclick="openModal()">Open Modal</button>
+`);
+    console.log('editor', editor)
+</script>
+</html>

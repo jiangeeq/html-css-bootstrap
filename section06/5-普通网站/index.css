@@ -59,7 +59,7 @@ nav input[type='checkbox'],
 .mission-header h3 {
     font-family: "Droid Serif", Serif;
     font-size: 2em;
-    color: #159400;
+    color: #ff9d00;
     text-align: center;
 }
 
@@ -68,6 +68,8 @@ nav input[type='checkbox'],
 }
 
 .mission_div {
+    /*指定元素高度和宽度（包括padding和border）*/
+    box-sizing: border-box;
     width: 50%;
     float: left;
     position: relative;
@@ -84,7 +86,7 @@ nav input[type='checkbox'],
 }
 
 .mis-left {
-    width: 15%;
+    width: 25%;
     float: left;
 }
 
@@ -93,20 +95,21 @@ nav input[type='checkbox'],
 }
 
 .mis-right {
-    width: 82%;
-    float: right;
+    width: 65%;
+    float: left;
+    margin: 0 0 10px 10px;
 }
 
 .mis-right h3 {
     font-size: 1.25em;
-    color: #7DDF6C;
+    color: #000;
 }
 
 .mis-right p {
     font-size: 0.875em;
-    color: #000;
+    color: #666;
     line-height: 1.8em;
-    margin: 12px 0 0 0;
+    margin: 12px 0px 0px 1px;
 }
 
 .footer {
