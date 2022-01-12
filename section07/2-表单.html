@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap5/bootstrap.min.css">
+    <style>
+        .br {
+            margin: 40px 0;
+            width: 100%;
+            border-bottom: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+<div>Hello World</div>
+<!--堆叠表单-->
+<form>
+    <div class="form-group">
+        <label for="username">账户名：</label>
+        <input type="text" class="form-control" id="username">
+    </div>
+    <button class="btn btn-primary" type="submit">提交</button>
+</form>
+<!--内联表单-->
+<form class="form-check-inline">
+    <div class="form-group">
+        <label for="username1">账户名：</label>
+        <input type="text" class="form-control" id="username1">
+    </div>
+    <button class="btn btn-primary" type="submit">提交</button>
+</form>
+<div class="br"></div>
+<form>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">@</span>
+        </div>
+        <input type="text" class="form-control" placeholder="username">
+    </div>
+    <label for="email">请输入邮箱：</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Your Email" id="email">
+        <div class="input-group">
+            <span class="input-group-text">@qq.com</span>
+        </div>
+    </div>
+</form>
+<script src="bootstrap5/bootstrap.min.js"></script>
+</body>
+</html>
