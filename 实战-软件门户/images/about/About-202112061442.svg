@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="202" height="193" viewBox="0 0 202 193" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="ai-service-whitedb3" x="26" y="34">
+        <title>AI 平台服务-16px</title>
+        <g fill="#FFF" fill-rule="nonzero">
+            <path d="M3 3v10h10V3H3zM1 1h14v14H1V1z"/>
+            <path d="M5 5h2v2H5V5zm0 4h2v2H5V9zm4-4h2v2H9V5zm0 4h2v2H9V9z"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="ai-service85d" x="158" y="72">
+        <title>AI 平台服务-16px</title>
+        <g fill="#0052D9" fill-rule="nonzero">
+            <path d="M3 3v10h10V3H3zM1 1h14v14H1V1z"/>
+            <path d="M5 5h2v2H5V5zm0 4h2v2H5V9zm4-4h2v2H9V5zm0 4h2v2H9V9z"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="application-security-white621" x="158">
+        <title>应用安全-16px</title>
+        <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
+            <path d="M0 0h14v7.4s-.054 5.959-7 7.6C.054 13.359 0 7.4 0 7.4V0zm7 12.934c4.732-1.345 4.987-5.132 5-5.572V2H2v5.4c.013.403.268 4.189 5 5.534z"
+                  fill="#FFF"/>
+            <path d="M5 5.294v2.197l2 1.143 2.001-1.143V5.294l-2-1.142L5 5.294z" stroke="#FFF" stroke-width="2"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="application-security067" x="158" y="18">
+        <title>应用安全-16px</title>
+        <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
+            <path d="M0 0h14v7.4s-.054 5.959-7 7.6C.054 13.359 0 7.4 0 7.4V0zm7 12.934c4.732-1.345 4.987-5.132 5-5.572V2H2v5.4c.013.403.268 4.189 5 5.534z"
+                  fill="#0052D9"/>
+            <path d="M5 5.294v2.197l2 1.143 2.001-1.143V5.294l-2-1.142L5 5.294z" stroke="#0052D9" stroke-width="2"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="base-communicate-whitebfc" x="44" y="34">
+        <title>基础通信-16px</title>
+        <path d="M9 1h6v14h-5l-2-1.999h5v-10h-2L9 1zM1 1h5l2 2.001H3v10h1.999L7 15H1V1zm4 6h2v2H5V7zm4 0h2v2H9V7z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="base-communicatea37" x="68">
+        <title>基础通信-16px</title>
+        <path d="M9 1h6v14h-5l-2-1.999h5v-10h-2L9 1zM1 1h5l2 2.001H3v10h1.999L7 15H1V1zm4 6h2v2H5V7zm4 0h2v2H9V7z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="block-chain-white4de" x="68" y="18">
+        <title>Group 51</title>
+        <path d="M8.85 11.414a3.203 3.203 0 0 0-1.7 0V9.236a1.5 1.5 0 1 1 1.7 0v2.178zm1.407-5.683L12.5 4.45a1.5 1.5 0 1 1 2.349 1.287v2.678a3.203 3.203 0 0 0-1.7 0V6.036l-2.049 1.171a3.196 3.196 0 0 0-.844-1.476zm-4.514 0c-.403.401-.7.908-.844 1.476L2.85 6.037v2.377a3.203 3.203 0 0 0-1.7 0V5.736A1.5 1.5 0 1 1 3.5 4.45l2.243 1.282zm3.107-.817a3.203 3.203 0 0 0-1.7 0V2.736a1.5 1.5 0 1 1 1.7 0v2.178zM8 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-6-3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="block-chain74b" x="68" y="36">
+        <title>Group 51</title>
+        <path d="M8.85 11.414a3.203 3.203 0 0 0-1.7 0V9.236a1.5 1.5 0 1 1 1.7 0v2.178zm1.407-5.683L12.5 4.45a1.5 1.5 0 1 1 2.349 1.287v2.678a3.203 3.203 0 0 0-1.7 0V6.036l-2.049 1.171a3.196 3.196 0 0 0-.844-1.476zm-4.514 0c-.403.401-.7.908-.844 1.476L2.85 6.037v2.377a3.203 3.203 0 0 0-1.7 0V5.736A1.5 1.5 0 1 1 3.5 4.45l2.243 1.282zm3.107-.817a3.203 3.203 0 0 0-1.7 0V2.736a1.5 1.5 0 1 1 1.7 0v2.178zM8 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-6-3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="business-security-white0c7" y="60">
+        <title>画板</title>
+        <path d="M15 .5v7.4s-.054 5.959-7 7.6c-6.725-1.589-6.99-7.226-7-7.582V.5h14zM6.594 7.064L5.765 8.5H3.071C3.294 9.72 4.214 12.358 8 13.434c3.766-1.07 4.696-3.688 4.926-4.934H11.39l-1.984 3.436-2.812-4.872zM13 2.5H3v4h1.61l1.984-3.436 2.812 4.872.829-1.436H13v-4z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="business-securityad0" x="18" y="60">
+        <title>画板</title>
+        <path d="M15 .5v7.4s-.054 5.959-7 7.6c-6.725-1.589-6.99-7.226-7-7.582V.5h14zM6.594 7.064L5.765 8.5H3.071C3.294 9.72 4.214 12.358 8 13.434c3.766-1.07 4.696-3.688 4.926-4.934H11.39l-1.984 3.436-2.812-4.872zM13 2.5H3v4h1.61l1.984-3.436 2.812 4.872.829-1.436H13v-4z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="calculate-whited90" x="36" y="60">
+        <title>计算-16px</title>
+        <path d="M3.281 5L8 2.304 12.719 5 8 7.696 3.281 5zM8 0L1 4v8l3.027 1.73a3.968 3.968 0 0 1 .642-1.937L3 10.839V7.143L8 10l5-2.857v3.696l-3.416 1.953A1.989 1.989 0 0 0 8 12a2 2 0 0 0 0 4c.729 0 1.361-.395 1.71-.978L15 12V4L8 0z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="calculate105" x="54" y="60">
+        <title>计算-16px</title>
+        <path d="M3.281 5L8 2.304 12.719 5 8 7.696 3.281 5zM8 0L1 4v8l3.027 1.73a3.968 3.968 0 0 1 .642-1.937L3 10.839V7.143L8 10l5-2.857v3.696l-3.416 1.953A1.989 1.989 0 0 0 8 12a2 2 0 0 0 0 4c.729 0 1.361-.395 1.71-.978L15 12V4L8 0z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="cdn-acceleration-white0ed" x="86">
+        <title>CDN与加速-16px</title>
+        <path d="M8 0L1 4.001v8L8 16l7-3.999v-8L8 0zM4.046 4.563L8 2.304l3.953 2.259L8 6.845 4.046 4.563zM9 8.578l3.999-2.31v4.572L9 13.126V8.578zM3 10.84V6.268l4 2.31v4.548L3 10.84z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="cdn-acceleration95d" x="86" y="18">
+        <title>CDN与加速-16px</title>
+        <path d="M8 0L1 4.001v8L8 16l7-3.999v-8L8 0zM4.046 4.563L8 2.304l3.953 2.259L8 6.845 4.046 4.563zM9 8.578l3.999-2.31v4.572L9 13.126V8.578zM3 10.84V6.268l4 2.31v4.548L3 10.84z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="content-security-whited5f" x="86" y="36">
+        <title>内容安全-16px</title>
+        <path d="M1 1h14v7.4s-.054 5.959-7 7.6c-6.946-1.641-7-7.6-7-7.6V1zm7 12.934c4.732-1.345 4.987-5.132 5-5.572V3H3v5.4c.013.403.268 4.189 5 5.534zM8 8h3v2H8V8zM5 5h2v5H5V5zm3 0h3v2H8V5z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="content-securityb11" x="86" y="54">
+        <title>内容安全-16px</title>
+        <path d="M1 1h14v7.4s-.054 5.959-7 7.6c-6.946-1.641-7-7.6-7-7.6V1zm7 12.934c4.732-1.345 4.987-5.132 5-5.572V3H3v5.4c.013.403.268 4.189 5 5.534zM8 8h3v2H8V8zM5 5h2v5H5V5zm3 0h3v2H8V5z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="data-application-whiteaf6" y="78">
+        <title>云智大数据应用-16px</title>
+        <path d="M3 3v10h10V3H3zM1 1h14v14H1V1zm7 9a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 2a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="data-application3df" x="18" y="78">
+        <title>云智大数据应用-16px</title>
+        <path d="M3 3v10h10V3H3zM1 1h14v14H1V1zm7 9a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 2a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="data-platform-white196" x="36" y="78">
+        <title>云智大数据平台-16px</title>
+        <path d="M1 15h14V1H1v14zm2-2h10V3H3v10zm0-6h4V5H3v2zm6 0h2V5H9v2zm-4 4h2V9H5v2zm4 .001h4V9H9v2.001z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="data-platform18d" x="54" y="78">
+        <title>云智大数据平台-16px</title>
+        <path d="M1 15h14V1H1v14zm2-2h10V3H3v10zm0-6h4V5H3v2zm6 0h2V5H9v2zm-4 4h2V9H5v2zm4 .001h4V9H9v2.001z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="data-processing-whiteaca" x="72" y="78">
+        <title>数据处理-16px</title>
+        <path d="M13.5 10c-.796 0-1.44.622-1.49 1.405L8 13.696l-5-2.857V9.732l7.049-4.069-2.011-1.149L1 8.577V12l3.052 1.744L8 16l5.287-3.021c.07.01.14.021.213.021a1.5 1.5 0 1 0 0-3zM15 4v3.423l-7.038 4.063-2.011-1.149L13 6.268V5.161L8 2.304 3.99 4.595A1.495 1.495 0 0 1 1 4.5 1.5 1.5 0 0 1 2.5 3c.073 0 .143.011.213.021L8 0l7 4z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="data-processingdfe" x="104">
+        <title>数据处理-16px</title>
+        <path d="M13.5 10c-.796 0-1.44.622-1.49 1.405L8 13.696l-5-2.857V9.732l7.049-4.069-2.011-1.149L1 8.577V12l3.052 1.744L8 16l5.287-3.021c.07.01.14.021.213.021a1.5 1.5 0 1 0 0-3zM15 4v3.423l-7.038 4.063-2.011-1.149L13 6.268V5.161L8 2.304 3.99 4.595A1.495 1.495 0 0 1 1 4.5 1.5 1.5 0 0 1 2.5 3c.073 0 .143.011.213.021L8 0l7 4z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="data-security-white08a" x="104" y="18">
+        <title>数据安全-16px</title>
+        <path d="M1 1h14v7.4s-.054 5.959-7 7.6c-6.946-1.641-7-7.6-7-7.6V1zm7 12.934c4.732-1.345 4.987-5.132 5-5.572V3H3v5.4c.013.403.268 4.189 5 5.534zM9 8h2a3 3 0 1 1-6 0h2a1 1 0 1 0 2 0zm0-1a1 1 0 1 0-2 0H5a3 3 0 1 1 6 0H9z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="data-securityf00" x="104" y="36">
+        <title>数据安全-16px</title>
+        <path d="M1 1h14v7.4s-.054 5.959-7 7.6c-6.946-1.641-7-7.6-7-7.6V1zm7 12.934c4.732-1.345 4.987-5.132 5-5.572V3H3v5.4c.013.403.268 4.189 5 5.534zM9 8h2a3 3 0 1 1-6 0h2a1 1 0 1 0 2 0zm0-1a1 1 0 1 0-2 0H5a3 3 0 1 1 6 0H9z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="data-visual-white596" x="104" y="54">
+        <title>云智大数据可视化-16px</title>
+        <path d="M11 9h2V3H3v10h10v-2H3V9h2V7h2v2h2V5h2v4zM1 1h14v14H1V1z" fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="data-visualf24" x="104" y="72">
+        <title>云智大数据可视化-16px</title>
+        <path d="M11 9h2V3H3v10h10v-2H3V9h2V7h2v2h2V5h2v4zM1 1h14v14H1V1z" fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="database-white21b" y="96">
+        <title>数据库-16px</title>
+        <path d="M3 12.905v-2.708C4.334 10.74 6.169 11 8 11s3.666-.26 5-.803v2.708C12.738 13.246 11.027 14 8 14s-4.738-.754-5-1.095zM8 2c2.764 0 4.439.63 4.909 1-.47.37-2.145 1-4.909 1s-4.439-.63-4.909-1C3.561 2.63 5.236 2 8 2zm5 5.905C12.738 8.246 11.027 9 8 9s-4.738-.754-5-1.095V5.197C4.334 5.74 6.169 6 8 6s3.666-.26 5-.803v2.708zM8 0C4.516 0 1 .927 1 3v10c0 2.072 3.516 3 7 3s7-.928 7-3V3c0-2.073-3.516-3-7-3z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="databasec45" x="18" y="96">
+        <title>数据库-16px</title>
+        <path d="M3 12.905v-2.708C4.334 10.74 6.169 11 8 11s3.666-.26 5-.803v2.708C12.738 13.246 11.027 14 8 14s-4.738-.754-5-1.095zM8 2c2.764 0 4.439.63 4.909 1-.47.37-2.145 1-4.909 1s-4.439-.63-4.909-1C3.561 2.63 5.236 2 8 2zm5 5.905C12.738 8.246 11.027 9 8 9s-4.738-.754-5-1.095V5.197C4.334 5.74 6.169 6 8 6s3.666-.26 5-.803v2.708zM8 0C4.516 0 1 .927 1 3v10c0 2.072 3.516 3 7 3s7-.928 7-3V3c0-2.073-3.516-3-7-3z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="dev-tool-whitec6e" x="36" y="96">
+        <title>开发者工具-16px</title>
+        <path d="M10 1.143v2.303l3 1.715v5.679l-3 1.714v2.303L15 12V4l-5-2.857zm-4 0L1 4v8l5 2.857v-2.303L3 10.84V5.161l3-1.715V1.143zM8.577 5l-3.464 6h2.31l3.464-6h-2.31z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="dev-toolb41" x="54" y="96">
+        <title>开发者工具-16px</title>
+        <path d="M10 1.143v2.303l3 1.715v5.679l-3 1.714v2.303L15 12V4l-5-2.857zm-4 0L1 4v8l5 2.857v-2.303L3 10.84V5.161l3-1.715V1.143zM8.577 5l-3.464 6h2.31l3.464-6h-2.31z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="domain-website-whiteda4" x="72" y="96">
+        <title>域名与网站-16px</title>
+        <path d="M1 15V1h14v14H1zM3 5h10V3H3v2zm5 8h4.999V7H8v6zm-5 0h3.001V7H3v6z" fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="domain-website442" x="90" y="96">
+        <title>域名与网站-16px</title>
+        <path d="M1 15V1h14v14H1zM3 5h10V3H3v2zm5 8h4.999V7H8v6zm-5 0h3.001V7H3v6z" fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="education-service-whiteb6f" x="122">
+        <title>教育服务-16px</title>
+        <path d="M7 12.634v-7.84L3 3.651v7.84l4 1.143zm2 0l4-1.143v-7.84L9 4.794v7.84zM1 1l7 2 7-2v12l-7 2-7-2V1z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="education-servicef22" x="122" y="18">
+        <title>教育服务-16px</title>
+        <path d="M7 12.634v-7.84L3 3.651v7.84l4 1.143zm2 0l4-1.143v-7.84L9 4.794v7.84zM1 1l7 2 7-2v12l-7 2-7-2V1z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="enterprise-application-white036" x="122" y="36">
+        <title>企业应用-16px</title>
+        <g transform="translate(1)" fill="none" fill-rule="evenodd">
+            <path d="M8 .571v2.304l4 2.285v4.572l2 1.155V4L8 .571zm-2 0L0 4v6.887l2-1.155V5.16l4-2.285V.571zm1 13.125l-3.954-2.258-2.005 1.157L7 16l5.958-3.405-2.005-1.157L7 13.696z"
+                  fill="#FFF" fill-rule="nonzero"/>
+            <path stroke="#FFF" stroke-width="2" d="M4.999 6.901v2.197l2 1.143L9 9.098V6.9L7 5.76z"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="enterprise-application535" x="122" y="54">
+        <title>企业应用-16px</title>
+        <g transform="translate(1)" fill="none" fill-rule="evenodd">
+            <path d="M8 .571v2.304l4 2.285v4.572l2 1.155V4L8 .571zm-2 0L0 4v6.887l2-1.155V5.16l4-2.285V.571zm1 13.125l-3.954-2.258-2.005 1.157L7 16l5.958-3.405-2.005-1.157L7 13.696z"
+                  fill="#0052D9" fill-rule="nonzero"/>
+            <path stroke="#0052D9" stroke-width="2" d="M4.999 6.901v2.197l2 1.143L9 9.098V6.9L7 5.76z"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="enterprise-communicate-white7da" x="122" y="72">
+        <title>企业通信-16px</title>
+        <defs>
+            <path id="bka" d="M0 0h16v14.42H0z"/>
+        </defs>
+        <g fill="none" fill-rule="evenodd">
+            <path d="M3.5 16L8 8l4.5 8h-9zM8 12.079L6.92 14h2.16L8 12.079zm-4.759 2.34A7.981 7.981 0 0 1 .001 8a8 8 0 1 1 16 0 7.984 7.984 0 0 1-3.242 6.42l-.99-1.757A5.987 5.987 0 0 0 14 8c0-3.31-2.692-6-6-6-3.309 0-6 2.69-6 6 0 1.88.871 3.56 2.23 4.662l-.989 1.758zm1.992-3.54A3.982 3.982 0 0 1 4 7.999a4 4 0 0 1 8 0 3.978 3.978 0 0 1-1.233 2.88L9.716 9.01A1.98 1.98 0 0 0 10 8c0-1.103-.897-2-2-2-1.102 0-2 .897-2 2 0 .37.108.713.284 1.01L5.233 10.88z"
+                  fill="#FFF"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="enterprise-communicatebdc" x="122" y="90">
+        <title>企业通信-16px</title>
+        <defs>
+            <path id="bla" d="M0 0h16v14.42H0z"/>
+        </defs>
+        <g fill="none" fill-rule="evenodd">
+            <path d="M3.5 16L8 8l4.5 8h-9zM8 12.079L6.92 14h2.16L8 12.079zm-4.759 2.34A7.981 7.981 0 0 1 .001 8a8 8 0 1 1 16 0 7.984 7.984 0 0 1-3.242 6.42l-.99-1.757A5.987 5.987 0 0 0 14 8c0-3.31-2.692-6-6-6-3.309 0-6 2.69-6 6 0 1.88.871 3.56 2.23 4.662l-.989 1.758zm1.992-3.54A3.982 3.982 0 0 1 4 7.999a4 4 0 0 1 8 0 3.978 3.978 0 0 1-1.233 2.88L9.716 9.01A1.98 1.98 0 0 0 10 8c0-1.103-.897-2-2-2-1.102 0-2 .897-2 2 0 .37.108.713.284 1.01L5.233 10.88z"
+                  fill="#0052D9"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="expert-service-whitedb4" y="114">
+        <title>专家服务-16px</title>
+        <path d="M9 6h3v2H9v3H7V8H4V6h3V4h2v2zm-1 7.934C3.268 12.589 3.013 8.803 3 8.4V3h10v5.362c-.013.44-.268 4.227-5 5.572zM1 1v7.4s.054 5.959 7 7.6c6.946-1.641 7-7.6 7-7.6V1H1z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="expert-service31f" x="18" y="114">
+        <title>专家服务-16px</title>
+        <path d="M9 6h3v2H9v3H7V8H4V6h3V4h2v2zm-1 7.934C3.268 12.589 3.013 8.803 3 8.4V3h10v5.362c-.013.44-.268 4.227-5 5.572zM1 1v7.4s.054 5.959 7 7.6c6.946-1.641 7-7.6 7-7.6V1H1z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="face-recognition-white62e" x="36" y="114">
+        <title>人脸识别-16px</title>
+        <path d="M13 13v-3h2v5h-5v-2h3zM3 13h3v2H1v-5h2v3zM15 3v3h-2V3h-3V1h5v2zM3 3v3H1V1h5v2H3zM1 7h14v2H1V7z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="face-recognition617" x="54" y="114">
+        <title>人脸识别-16px</title>
+        <path d="M13 13v-3h2v5h-5v-2h3zM3 13h3v2H1v-5h2v3zM15 3v3h-2V3h-3V1h5v2zM3 3v3H1V1h5v2H3zM1 7h14v2H1V7z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="financial-control-whitec07" x="72" y="114">
+        <title>金融风控-16px</title>
+        <path d="M6.555 3h-3.21l8.072 8.968a5.895 5.895 0 0 0 1.289-2.133L6.555 3zm2.69 0L13 7.172V3H9.245zM3 5.606V8.4c.013.403.268 4.189 5 5.534a8.56 8.56 0 0 0 1.827-.742L3 5.606zM1 1h14v7.4s-.054 5.959-7 7.6c-6.946-1.641-7-7.6-7-7.6V1z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="financial-controlf86" x="90" y="114">
+        <title>金融风控-16px</title>
+        <path d="M6.555 3h-3.21l8.072 8.968a5.895 5.895 0 0 0 1.289-2.133L6.555 3zm2.69 0L13 7.172V3H9.245zM3 5.606V8.4c.013.403.268 4.189 5 5.534a8.56 8.56 0 0 0 1.827-.742L3 5.606zM1 1h14v7.4s-.054 5.959-7 7.6c-6.946-1.641-7-7.6-7-7.6V1z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="financial-service-whitef01" x="108" y="114">
+        <title>Combined Shape</title>
+        <path d="M9 8v1h3v2H9v2H7v-2H4V9h3V8H4V6h1V4h2v2h2V4h2v2h1v2H9zM8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm0 14c3.309 0 6-2.691 6-6s-2.691-6-6-6-6 2.691-6 6 2.691 6 6 6z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="financial-service66a" x="140">
+        <title>Combined Shape</title>
+        <path d="M9 8v1h3v2H9v2H7v-2H4V9h3V8H4V6h1V4h2v2h2V4h2v2h1v2H9zM8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm0 14c3.309 0 6-2.691 6-6s-2.691-6-6-6-6 2.691-6 6 2.691 6 6 6z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="game-service-white980" x="140" y="18">
+        <title>游戏服务-16px</title>
+        <path d="M2 4v8h12V4H2zM0 2h16v12H0V2zm5 5V5h2v2h2v2H7v2H5V9H3V7h2zm5 2h2v2h-2V9z" fill="#FFF"
+              fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="game-service0cc" x="140" y="36">
+        <title>游戏服务-16px</title>
+        <path d="M2 4v8h12V4H2zM0 2h16v12H0V2zm5 5V5h2v2h2v2H7v2H5V9H3V7h2zm5 2h2v2h-2V9z" fill="#0052D9"
+              fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="host-security-white97f" x="140" y="54">
+        <title>主机安全-16px</title>
+        <g transform="translate(1 1)" fill="#FFF" fill-rule="evenodd">
+            <path d="M0 0h14v7.4s-.054 5.959-7 7.6C.054 13.359 0 7.4 0 7.4V0zm7 12.934c4.732-1.345 4.987-5.132 5-5.572V2H2v5.4c.013.403.268 4.189 5 5.534z"/>
+            <path fill-rule="nonzero" d="M4 4h6v2H4zM4 7h6v2H4z"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="host-securityb0f" x="140" y="72">
+        <title>主机安全-16px</title>
+        <g transform="translate(1 1)" fill="#0052D9" fill-rule="evenodd">
+            <path d="M0 0h14v7.4s-.054 5.959-7 7.6C.054 13.359 0 7.4 0 7.4V0zm7 12.934c4.732-1.345 4.987-5.132 5-5.572V2H2v5.4c.013.403.268 4.189 5 5.534z"/>
+            <path fill-rule="nonzero" d="M4 4h6v2H4zM4 7h6v2H4z"/>
+        </g>
+    </svg>
+    <svg width="26" height="26" viewBox="-1 -1 26 26" id="icon-hero-player5ba" y="34">
+        <title>编组 5</title>
+        <g fill="none" fill-rule="evenodd">
+            <circle fill="#FFF" cx="12" cy="12" r="12"/>
+            <path fill="#0052D9" d="M16.5 12.1l-8 5v-10z"/>
+        </g>
+    </svg>
+    <svg width="8" height="12" viewBox="-1 -1 8 12" id="icon-right-arrow704" x="90" y="78">
+        <title>Group 2</title>
+        <path d="M3.6 5L0 1.25 1.2 0 6 5 4.8 6.25 1.2 10 0 8.75z" fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="identity-security-whited1c" y="132">
+        <title>画板</title>
+        <defs>
+            <path id="caa" d="M2.186 7.99l3.292 4.843h3.007l4.154-3.496-.671-2.85-7.84-.987z"/>
+        </defs>
+        <g transform="translate(.5)" fill="none" fill-rule="evenodd">
+            <circle fill="#FFF" fill-rule="nonzero" cx="7.5" cy="4.5" r="1.5"/>
+            <path d="M7.503 0c2.55 0 5.034.788 7.115 2.25l.382.277v.586a14.885 14.885 0 0 1-7.101 12.653l-.302.18-.094.054-.1-.053A14.892 14.892 0 0 1 .005 3.472L0 3.12v-.593l.073-.054A12.382 12.382 0 0 1 7.503 0zm0 2a10.38 10.38 0 0 0-5.314 1.462l-.179.11.01.209c.21 3.874 2.155 7.435 5.228 9.683l.246.176.212-.15a12.884 12.884 0 0 0 5.275-9.71l.008-.209-.19-.118a10.383 10.383 0 0 0-4.923-1.446L7.503 2z"
+                  fill="#FFF" fill-rule="nonzero"/>
+            <mask id="cab" fill="#fff">
+                <use xlink:href="#caa"/>
+            </mask>
+            <path d="M7.5 6.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z" fill="#FFF"
+                  fill-rule="nonzero" mask="url(#cab)"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="identity-securityed7" x="18" y="132">
+        <title>画板</title>
+        <defs>
+            <path id="cba" d="M2.186 7.99l3.292 4.843h3.007l4.154-3.496-.671-2.85-7.84-.987z"/>
+        </defs>
+        <g transform="translate(.5)" fill="none" fill-rule="evenodd">
+            <circle fill="#0052D9" fill-rule="nonzero" cx="7.5" cy="4.5" r="1.5"/>
+            <path d="M7.503 0c2.55 0 5.034.788 7.115 2.25l.382.277v.586a14.885 14.885 0 0 1-7.101 12.653l-.302.18-.094.054-.1-.053A14.892 14.892 0 0 1 .005 3.472L0 3.12v-.593l.073-.054A12.382 12.382 0 0 1 7.503 0zm0 2a10.38 10.38 0 0 0-5.314 1.462l-.179.11.01.209c.21 3.874 2.155 7.435 5.228 9.683l.246.176.212-.15a12.884 12.884 0 0 0 5.275-9.71l.008-.209-.19-.118a10.383 10.383 0 0 0-4.923-1.446L7.503 2z"
+                  fill="#0052D9" fill-rule="nonzero"/>
+            <mask id="cbb" fill="#fff">
+                <use xlink:href="#cba"/>
+            </mask>
+            <path d="M7.5 6.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"
+                  fill="#0052D9" fill-rule="nonzero" mask="url(#cbb)"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="image-recognition-white29c" x="36" y="132">
+        <title>图像识别-16px</title>
+        <path d="M14 9.64V4H2v3.505l2.907-3.044 3.57 4.7 3.2-3.09L14 9.64zM13.15 12l-1.827-2.807-1.629 1.571.94 1.236h2.516zM2 10.4V12h6.122L4.733 7.539 2 10.4zM0 2h16v12H0V2z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="image-recognition5df" x="54" y="132">
+        <title>图像识别-16px</title>
+        <path d="M14 9.64V4H2v3.505l2.907-3.044 3.57 4.7 3.2-3.09L14 9.64zM13.15 12l-1.827-2.807-1.629 1.571.94 1.236h2.516zM2 10.4V12h6.122L4.733 7.539 2 10.4zM0 2h16v12H0V2z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="iot-whitec52" x="72" y="132">
+        <title>物联网-16px copy</title>
+        <path d="M11 6.538L9 7.681v1.263l-4.117 2.352L3 10.22V5.161l3.962-2.265C7.13 2.961 7.31 3 7.5 3a1.5 1.5 0 1 0 0-3c-.692 0-1.27.472-1.442 1.11L1 4v7.381L4.883 13.6 11 10.104V6.538zM15 12l-5.058 2.89A1.496 1.496 0 0 1 7 14.5 1.5 1.5 0 0 1 8.5 13c.19 0 .37.039.538.103L13 10.839V5.78l-1.883-1.076L7 7.056v1.263L5 9.462V5.896L11.117 2.4 15 4.619V12z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="iot49c" x="90" y="132">
+        <title>物联网-16px copy</title>
+        <path d="M11 6.538L9 7.681v1.263l-4.117 2.352L3 10.22V5.161l3.962-2.265C7.13 2.961 7.31 3 7.5 3a1.5 1.5 0 1 0 0-3c-.692 0-1.27.472-1.442 1.11L1 4v7.381L4.883 13.6 11 10.104V6.538zM15 12l-5.058 2.89A1.496 1.496 0 0 1 7 14.5 1.5 1.5 0 0 1 8.5 13c.19 0 .37.039.538.103L13 10.839V5.78l-1.883-1.076L7 7.056v1.263L5 9.462V5.896L11.117 2.4 15 4.619V12z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="12" height="8" viewBox="-1 -1 12 8" id="link-arrow-bottom-disableda30" x="108" y="96">
+        <title>Path</title>
+        <path d="M5 3.6L8.75 0 10 1.2 5 6 3.75 4.8 0 1.2 1.25 0z" fill="#999" fill-rule="evenodd"/>
+    </svg>
+    <svg width="12" height="8" viewBox="-1 -1 12 8" id="link-arrow-bottom-gray7e3" x="108" y="104">
+        <title>Path</title>
+        <path d="M5 3.6L8.75 0 10 1.2 5 6 3.75 4.8 0 1.2 1.25 0z" fill="#666" fill-rule="evenodd"/>
+    </svg>
+    <svg width="10" height="7" viewBox="-1 -1 10 7" id="link-arrow-bottom-s-disabled76e" x="30" y="186">
+        <title>Path</title>
+        <path d="M4 2.956L6.969 0 8 1.022 4 5 0 1.023 1.031 0z" fill="#999" fill-rule="evenodd"/>
+    </svg>
+    <svg width="10" height="7" viewBox="-1 -1 10 7" id="link-arrow-bottom-s-graycea" x="20" y="186">
+        <title>Path</title>
+        <path d="M4 2.956L6.969 0 8 1.022 4 5 0 1.023 1.031 0z" fill="#666" fill-rule="evenodd"/>
+    </svg>
+    <svg width="10" height="7" viewBox="-1 -1 10 7" id="link-arrow-bottom-s-whitecc7" x="10" y="186">
+        <title>Path</title>
+        <path d="M4 2.956L6.969 0 8 1.022 4 5 0 1.023 1.031 0z" fill="#fff" fill-rule="evenodd"/>
+    </svg>
+    <svg width="10" height="7" viewBox="-1 -1 10 7" id="link-arrow-bottom-sca5" x="144" y="140">
+        <title>Path</title>
+        <path d="M4 2.956L6.969 0 8 1.022 4 5 0 1.023 1.031 0z" fill="#00A4FF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="12" height="8" viewBox="-1 -1 12 8" id="link-arrow-bottom-whitec75" x="26" y="52">
+        <title>Path</title>
+        <path d="M5 3.6L8.75 0 10 1.2 5 6 3.75 4.8 0 1.2 1.25 0z" fill="#fff" fill-rule="evenodd"/>
+    </svg>
+    <svg width="12" height="8" viewBox="-1 -1 12 8" id="link-arrow-bottom78e" x="126" y="114">
+        <title>Path</title>
+        <path d="M5 3.6L8.75 0 10 1.2 5 6 3.75 4.8 0 1.2 1.25 0z" fill="#00A4FF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="8" height="12" viewBox="-1 -1 8 12" id="link-arrow-disabled5f5" x="162" y="150">
+        <title>Path</title>
+        <path d="M3.6 5L0 1.25 1.2 0 6 5 4.8 6.25 1.2 10 0 8.75z" fill="#999" fill-rule="evenodd"/>
+    </svg>
+    <svg width="8" height="12" viewBox="-1 -1 8 12" id="link-arrow-gray5c0" x="162" y="168">
+        <title>Path</title>
+        <path d="M3.6 5L0 1.25 1.2 0 6 5 4.8 6.25 1.2 10 0 8.75z" fill="#666" fill-rule="evenodd"/>
+    </svg>
+    <svg width="8" height="12" viewBox="-1 -1 8 12" id="link-arrow-left-disabled7e9" x="170" y="168">
+        <title>Path</title>
+        <path d="M2.4 5L6 1.25 4.8 0 0 5l1.2 1.25L4.8 10 6 8.75z" fill="#999" fill-rule="evenodd"/>
+    </svg>
+    <svg width="8" height="12" viewBox="-1 -1 8 12" id="link-arrow-left-gray4b4" x="178" y="168">
+        <title>Path</title>
+        <path d="M2.4 5L6 1.25 4.8 0 0 5l1.2 1.25L4.8 10 6 8.75z" fill="#666" fill-rule="evenodd"/>
+    </svg>
+    <svg width="7" height="10" viewBox="-1 -1 7 10" id="link-arrow-left-s-disabled8e3" x="194" y="34">
+        <title>Path</title>
+        <path d="M2.044 4L5 1.031 3.978 0 0 4l3.978 4L5 6.969z" fill="#999" fill-rule="evenodd"/>
+    </svg>
+    <svg width="7" height="10" viewBox="-1 -1 7 10" id="link-arrow-left-s-gray31a" x="194" y="84">
+        <title>Path</title>
+        <path d="M2.044 4L5 1.031 3.978 0 0 4l3.978 4L5 6.969z" fill="#666" fill-rule="evenodd"/>
+    </svg>
+    <svg width="7" height="10" viewBox="-1 -1 7 10" id="link-arrow-left-s-whiteca9" x="194" y="24">
+        <title>Path</title>
+        <path d="M2.044 4L5 1.031 3.978 0 0 4l3.978 4L5 6.969z" fill="#fff" fill-rule="evenodd"/>
+    </svg>
+    <svg width="7" height="10" viewBox="-1 -1 7 10" id="link-arrow-left-seed" x="194" y="94">
+        <title>Path</title>
+        <path d="M2.044 4L5 1.031 3.978 0 0 4l3.978 4L5 6.969z" fill="#00A4FF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="8" height="12" viewBox="-1 -1 8 12" id="link-arrow-left-whiteaca" x="194">
+        <title>Path</title>
+        <path d="M2.4 5L6 1.25 4.8 0 0 5l1.2 1.25L4.8 10 6 8.75z" fill="#fff" fill-rule="evenodd"/>
+    </svg>
+    <svg width="8" height="12" viewBox="-1 -1 8 12" id="link-arrow-left548" x="186" y="168">
+        <title>Path</title>
+        <path d="M2.4 5L6 1.25 4.8 0 0 5l1.2 1.25L4.8 10 6 8.75z" fill="#00A4FF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="7" height="10" viewBox="-1 -1 7 10" id="link-arrow-s-disabled916" x="194" y="44">
+        <title>Path</title>
+        <path d="M2.956 4L0 1.031 1.022 0 5 4 1.022 8 0 6.969z" fill="#999" fill-rule="evenodd"/>
+    </svg>
+    <svg width="7" height="10" viewBox="-1 -1 7 10" id="link-arrow-s-gray55c" x="194" y="54">
+        <title>Path</title>
+        <path d="M2.956 4L0 1.031 1.022 0 5 4 1.022 8 0 6.969z" fill="#666" fill-rule="evenodd"/>
+    </svg>
+    <svg width="7" height="10" viewBox="-1 -1 7 10" id="link-arrow-s-whitefbc" x="194" y="64">
+        <title>Path</title>
+        <path d="M2.956 4L0 1.031 1.022 0 5 4 1.022 8 0 6.969z" fill="#fff" fill-rule="evenodd"/>
+    </svg>
+    <svg width="7" height="10" viewBox="-1 -1 7 10" id="link-arrow-sa15" x="194" y="74">
+        <title>Path</title>
+        <path d="M2.956 4L0 1.031 1.022 0 5 4 1.022 8 0 6.969z" fill="#00A4FF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="12" height="8" viewBox="-1 -1 12 8" id="link-arrow-top-disabled7c6" x="144" y="132">
+        <title>Path</title>
+        <path d="M5 2.4L8.75 6 10 4.8 5 0 3.75 1.2 0 4.8 1.25 6z" fill="#999" fill-rule="evenodd"/>
+    </svg>
+    <svg width="12" height="8" viewBox="-1 -1 12 8" id="link-arrow-top-gray424" x="126" y="122">
+        <title>Path</title>
+        <path d="M5 2.4L8.75 6 10 4.8 5 0 3.75 1.2 0 4.8 1.25 6z" fill="#666" fill-rule="evenodd"/>
+    </svg>
+    <svg width="10" height="7" viewBox="-1 -1 10 7" id="link-arrow-top-s-disabledc3c" y="186">
+        <title>Path</title>
+        <path d="M4 2.044L6.969 5 8 3.978 4 0 0 3.977 1.031 5z" fill="#999" fill-rule="evenodd"/>
+    </svg>
+    <svg width="10" height="7" viewBox="-1 -1 10 7" id="link-arrow-top-s-gray2b4" x="40" y="186">
+        <title>Path</title>
+        <path d="M4 2.044L6.969 5 8 3.978 4 0 0 3.977 1.031 5z" fill="#666" fill-rule="evenodd"/>
+    </svg>
+    <svg width="10" height="7" viewBox="-1 -1 10 7" id="link-arrow-top-s-whitee64" x="50" y="186">
+        <title>Path</title>
+        <path d="M4 2.044L6.969 5 8 3.978 4 0 0 3.977 1.031 5z" fill="#fff" fill-rule="evenodd"/>
+    </svg>
+    <svg width="10" height="7" viewBox="-1 -1 10 7" id="link-arrow-top-sa36" x="60" y="186">
+        <title>Path</title>
+        <path d="M4 2.044L6.969 5 8 3.978 4 0 0 3.977 1.031 5z" fill="#00A4FF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="12" height="8" viewBox="-1 -1 12 8" id="link-arrow-top-whitecd3" x="50" y="52">
+        <title>Path</title>
+        <path d="M5 2.4L8.75 6 10 4.8 5 0 3.75 1.2 0 4.8 1.25 6z" fill="#fff" fill-rule="evenodd"/>
+    </svg>
+    <svg width="12" height="8" viewBox="-1 -1 12 8" id="link-arrow-top4f0" x="38" y="52">
+        <title>Path</title>
+        <path d="M5 2.4L8.75 6 10 4.8 5 0 3.75 1.2 0 4.8 1.25 6z" fill="#00A4FF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="8" height="12" viewBox="-1 -1 8 12" id="link-arrow-white9ef" x="194" y="12">
+        <title>Path</title>
+        <path d="M3.6 5L0 1.25 1.2 0 6 5 4.8 6.25 1.2 10 0 8.75z" fill="#fff" fill-rule="evenodd"/>
+    </svg>
+    <svg width="8" height="12" viewBox="-1 -1 8 12" id="link-arrow727" x="72" y="60">
+        <title>Path</title>
+        <path d="M3.6 5L0 1.25 1.2 0 6 5 4.8 6.25 1.2 10 0 8.75z" fill="#00A4FF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="manage-audit-white71b" x="72" y="168">
+        <title>管理与审计-16px</title>
+        <path d="M10.58 9.165l1.663 1.663-1.415 1.415-1.663-1.664a3.5 3.5 0 1 1 1.414-1.414zM13 13V3H3v10h10zM1 15V1h14v14H1zm6.5-6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="manage-audit9c1" x="90" y="168">
+        <title>管理与审计-16px</title>
+        <path d="M10.58 9.165l1.663 1.663-1.415 1.415-1.663-1.664a3.5 3.5 0 1 1 1.414-1.414zM13 13V3H3v10h10zM1 15V1h14v14H1zm6.5-6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="marketing-control-white365" x="108" y="168">
+        <title>营销风控-16px</title>
+        <g transform="translate(1 1)" fill="#FFF" fill-rule="evenodd">
+            <path d="M0 0h14v7.4s-.054 5.959-7 7.6C.054 13.359 0 7.4 0 7.4V0zm7 12.934c4.732-1.345 4.987-5.132 5-5.572V2H2v5.4c.013.403.268 4.189 5 5.534z"
+                  fill-rule="nonzero"/>
+            <path d="M12 6v2h-1.61l-1.984 3.436-2.812-4.872L4.765 8H2V6h1.61l1.984-3.436 2.812 4.872L9.235 6z"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="marketing-control25b" x="126" y="168">
+        <title>营销风控-16px</title>
+        <g transform="translate(1 1)" fill="#0052D9" fill-rule="evenodd">
+            <path d="M0 0h14v7.4s-.054 5.959-7 7.6C.054 13.359 0 7.4 0 7.4V0zm7 12.934c4.732-1.345 4.987-5.132 5-5.572V2H2v5.4c.013.403.268 4.189 5 5.534z"
+                  fill-rule="nonzero"/>
+            <path d="M12 6v2h-1.61l-1.984 3.436-2.812-4.872L4.765 8H2V6h1.61l1.984-3.436 2.812 4.872L9.235 6z"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="middleware-whitea18" x="144" y="168">
+        <title>中间件-16px</title>
+        <path d="M15 6h-2v2h2v6h-3 3l-2-2H7v2h5H1V9h2V7H1V1h14v5zM3 12h10V3H3v9zm10-2H4V8.697L5.131 7H3V5h9v1.303L10.869 8H13v2zM8.465 8l.666-1H7.535L6.87 8h1.596zm5.95 8h-2.83l-2-2H7v-2h3.414l4 4z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="middleware195" x="54" y="168">
+        <title>中间件-16px</title>
+        <path d="M15 6h-2v2h2v6h-3 3l-2-2H7v2h5H1V9h2V7H1V1h14v5zM3 12h10V3H3v9zm10-2H4V8.697L5.131 7H3V5h9v1.303L10.869 8H13v2zM8.465 8l.666-1H7.535L6.87 8h1.596zm5.95 8h-2.83l-2-2H7v-2h3.414l4 4z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="mobile-service-white9cb" x="36" y="168">
+        <title>移动服务-16px</title>
+        <g transform="translate(2)" fill="#FFF" fill-rule="nonzero">
+            <path d="M2 14h8V2H2v12zm-2 2V0h12v16H0z"/>
+            <path d="M3 11h6v2H3zM6 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="mobile-serviced6e" x="18" y="168">
+        <title>移动服务-16px</title>
+        <g transform="translate(2)" fill="#0052D9" fill-rule="nonzero">
+            <path d="M2 14h8V2H2v12zm-2 2V0h12v16H0z"/>
+            <path d="M3 11h6v2H3zM6 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="network-security-white506" y="168">
+        <title>网络安全-16px</title>
+        <path d="M7 13.589v-5.12L3 5.134V8.4c.012.372.23 3.635 4 5.189zM3.562 3L8 6.698 12.438 3H3.562zM13 5.135L9 8.468v5.12c3.77-1.553 3.988-4.82 4-5.226V5.135zM1 1h14v7.4s-.054 5.959-7 7.6c-6.946-1.641-7-7.6-7-7.6V1z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="network-security15f" x="176" y="144">
+        <title>网络安全-16px</title>
+        <path d="M7 13.589v-5.12L3 5.134V8.4c.012.372.23 3.635 4 5.189zM3.562 3L8 6.698 12.438 3H3.562zM13 5.135L9 8.468v5.12c3.77-1.553 3.988-4.82 4-5.226V5.135zM1 1h14v7.4s-.054 5.959-7 7.6c-6.946-1.641-7-7.6-7-7.6V1z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="network-white3e1" x="176" y="126">
+        <title>网络-16px</title>
+        <path d="M10.347 13.521A12.842 12.842 0 0 0 11.559 9h2.351a6.015 6.015 0 0 1-3.563 4.521zM2.091 9h2.35a12.843 12.843 0 0 0 1.213 4.521A6.015 6.015 0 0 1 2.091 9zm3.563-6.522A12.843 12.843 0 0 0 4.441 7h-2.35a6.015 6.015 0 0 1 3.563-4.522zM9.554 9A10.905 10.905 0 0 1 8 13.687 10.904 10.904 0 0 1 6.447 9h3.107zM6.447 7A10.895 10.895 0 0 1 8 2.313 10.896 10.896 0 0 1 9.554 7H6.447zm7.463 0h-2.351a12.842 12.842 0 0 0-1.212-4.522A6.015 6.015 0 0 1 13.91 7zM8 0a8 8 0 1 0 0 16 8 8 0 0 0 8-8 8 8 0 0 0-8-8z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="network229" x="176" y="108">
+        <title>网络-16px</title>
+        <path d="M10.347 13.521A12.842 12.842 0 0 0 11.559 9h2.351a6.015 6.015 0 0 1-3.563 4.521zM2.091 9h2.35a12.843 12.843 0 0 0 1.213 4.521A6.015 6.015 0 0 1 2.091 9zm3.563-6.522A12.843 12.843 0 0 0 4.441 7h-2.35a6.015 6.015 0 0 1 3.563-4.522zM9.554 9A10.905 10.905 0 0 1 8 13.687 10.904 10.904 0 0 1 6.447 9h3.107zM6.447 7A10.895 10.895 0 0 1 8 2.313 10.896 10.896 0 0 1 9.554 7H6.447zm7.463 0h-2.351a12.842 12.842 0 0 0-1.212-4.522A6.015 6.015 0 0 1 13.91 7zM8 0a8 8 0 1 0 0 16 8 8 0 0 0 8-8 8 8 0 0 0-8-8z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="nlp-white0a9" x="176" y="90">
+        <title>自然语言处理-16px</title>
+        <path d="M5 5.982v-2h6v2H5zm0 3v-2h4v2H5zM1 1h14v12H5.994L1 16.024V1zm2 10.982v.492l1.957-1.185.478-.289H13V3H3v8.982z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="nlp07c" x="176" y="72">
+        <title>自然语言处理-16px</title>
+        <path d="M5 5.982v-2h6v2H5zm0 3v-2h4v2H5zM1 1h14v12H5.994L1 16.024V1zm2 10.982v.492l1.957-1.185.478-.289H13V3H3v8.982z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="operation-maintenance-white7e6" x="176" y="54">
+        <title>监控与运维-16px</title>
+        <path d="M8.577 10L6.594 6.564 5.765 8H3V6h1.61l1.732-3H3v7h5.577zm1.658 0H13V3H6.846l2.56 4.436L10.235 6H13v2h-1.61l-1.155 2zM1 1h14v11H1V1zm0 13h14v2H1v-2z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="operation-maintenance3ce" x="176" y="36">
+        <title>监控与运维-16px</title>
+        <path d="M8.577 10L6.594 6.564 5.765 8H3V6h1.61l1.732-3H3v7h5.577zm1.658 0H13V3H6.846l2.56 4.436L10.235 6H13v2h-1.61l-1.155 2zM1 1h14v11H1V1zm0 13h14v2H1v-2z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="quantum-tech-white483" x="176" y="18">
+        <title>量子技术-16px</title>
+        <path d="M2.383 3.83a2.5 2.5 0 1 1 1.659 1.128L2.304 8l2.857 5H8v2H4L0 8l2.383-4.17zm11.234 8.34a2.5 2.5 0 1 1-1.659-1.128L13.696 8 10.84 3H8.004V1H12l4 7-2.383 4.17zM4.5 2a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1zm7 11c-.275 0-.5.225-.5.5s.225.5.5.5.5-.225.5-.5-.225-.5-.5-.5z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="quantum-tech3f9" x="176">
+        <title>量子技术-16px</title>
+        <path d="M2.383 3.83a2.5 2.5 0 1 1 1.659 1.128L2.304 8l2.857 5H8v2H4L0 8l2.383-4.17zm11.234 8.34a2.5 2.5 0 1 1-1.659-1.128L13.696 8 10.84 3H8.004V1H12l4 7-2.383 4.17zM4.5 2a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1zm7 11c-.275 0-.5.225-.5.5s.225.5.5.5.5-.225.5-.5-.225-.5-.5-.5z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="resource-manage-white58d" x="144" y="150">
+        <title>云资源管理-16px</title>
+        <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="2">
+            <path d="M9.172 4L12 6.828 14.828 4 12 1.172 9.172 4zM2 6h4V2H2v4zM10 14h4v-4h-4v4zM2 14h4v-4H2v4z"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="resource-managea8d" x="126" y="150">
+        <title>云资源管理-16px</title>
+        <g fill="none" fill-rule="evenodd" stroke="#0052D9" stroke-width="2">
+            <path d="M9.172 4L12 6.828 14.828 4 12 1.172 9.172 4zM2 6h4V2H2v4zM10 14h4v-4h-4v4zM2 14h4v-4H2v4z"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="retail-service-white5db" x="108" y="150">
+        <title>零售服务-16px copy</title>
+        <path d="M4 4h2c0 1.103.897 2 2 2s2-.897 2-2h2c0 2.206-1.794 4-4 4S4 6.206 4 4zm-1 9h10V3H3v10zm-2 2h14V1H1v14z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="retail-servicec87" x="90" y="150">
+        <title>零售服务-16px copy</title>
+        <path d="M4 4h2c0 1.103.897 2 2 2s2-.897 2-2h2c0 2.206-1.794 4-4 4S4 6.206 4 4zm-1 9h10V3H3v10zm-2 2h14V1H1v14z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="robot-white9a4" x="72" y="150">
+        <title>智能机器人-16px</title>
+        <path d="M9 2v2h7v12H0V4h7V2H6V0h4v2H9zM2 6v8h12V6H2zm2 3h2v2H4V9zm6 0h2v2h-2V9z" fill="#FFF"
+              fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="robotc58" x="54" y="150">
+        <title>智能机器人-16px</title>
+        <path d="M9 2v2h7v12H0V4h7V2H6V0h4v2H9zM2 6v8h12V6H2zm2 3h2v2H4V9zm6 0h2v2h-2V9z" fill="#0052D9"
+              fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="security-manage-whiteff3" x="36" y="150">
+        <title>安全管理-16px</title>
+        <path d="M1 1h14v7.4s-.054 5.959-7 7.6c-6.946-1.641-7-7.6-7-7.6V1zm7 12.934c4.732-1.345 4.987-5.132 5-5.572V3H3v5.4c.013.403.268 4.189 5 5.534zM4 5h2v4H4V5zm3-1h2v7H7V4zm3 1h2v4h-2V5z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="security-manage172" x="18" y="150">
+        <title>安全管理-16px</title>
+        <path d="M1 1h14v7.4s-.054 5.959-7 7.6c-6.946-1.641-7-7.6-7-7.6V1zm7 12.934c4.732-1.345 4.987-5.132 5-5.572V3H3v5.4c.013.403.268 4.189 5 5.534zM4 5h2v4H4V5zm3-1h2v7H7V4zm3 1h2v4h-2V5z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="service-security-white377" y="150">
+        <title>画板</title>
+        <path d="M9 5.5h3v2H9v3H7v-3H4v-2h3v-2h2v2zm-1 7.934C3.268 12.089 3.013 8.303 3 7.9V2.5h10v5.362c-.013.44-.268 4.227-5 5.572zM1 .5v7.4s.054 5.959 7 7.6c6.946-1.641 7-7.6 7-7.6V.5H1z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="service-securityfcb" x="158" y="126">
+        <title>画板</title>
+        <path d="M9 5.5h3v2H9v3H7v-3H4v-2h3v-2h2v2zm-1 7.934C3.268 12.089 3.013 8.303 3 7.9V2.5h10v5.362c-.013.44-.268 4.227-5 5.572zM1 .5v7.4s.054 5.959 7 7.6c6.946-1.641 7-7.6 7-7.6V.5H1z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="storage-white39a" x="158" y="108">
+        <title>存储-16px</title>
+        <path d="M8 5.696L10.969 4 8 2.304 5.031 4 8 5.696zM1 4l7-4 7 4-7 4-7-4zm2.13 7.017L8 13.6l4.838-2.6L15 12.18 8 16l-7-3.82 2.13-1.163zm0-4L8 9.6 12.838 7 15 8.18 8 12 1 8.18l2.13-1.163z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="storagecfe" x="158" y="90">
+        <title>存储-16px</title>
+        <path d="M8 5.696L10.969 4 8 2.304 5.031 4 8 5.696zM1 4l7-4 7 4-7 4-7-4zm2.13 7.017L8 13.6l4.838-2.6L15 12.18 8 16l-7-3.82 2.13-1.163zm0-4L8 9.6 12.838 7 15 8.18 8 12 1 8.18l2.13-1.163z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="terminal-security-whited04" x="158" y="54">
+        <title>终端安全-16px</title>
+        <g transform="translate(1 1)" fill="#FFF" fill-rule="evenodd">
+            <path d="M0 0h14v7.4s-.054 5.959-7 7.6C.054 13.359 0 7.4 0 7.4V0zm7 12.934c4.732-1.345 4.987-5.132 5-5.572V2H2v5.4c.013.403.268 4.189 5 5.534z"/>
+            <path fill-rule="nonzero" d="M4 3l3 2v2L4 5z"/>
+            <path fill-rule="nonzero" d="M4 9l3-2V5L4 7zM8 5h2v2H8z"/>
+        </g>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="terminal-security0b7" x="158" y="36">
+        <title>终端安全-16px</title>
+        <g transform="translate(1 1)" fill="#0052D9" fill-rule="evenodd">
+            <path d="M0 0h14v7.4s-.054 5.959-7 7.6C.054 13.359 0 7.4 0 7.4V0zm7 12.934c4.732-1.345 4.987-5.132 5-5.572V2H2v5.4c.013.403.268 4.189 5 5.534z"/>
+            <path fill-rule="nonzero" d="M4 3l3 2v2L4 5z"/>
+            <path fill-rule="nonzero" d="M4 9l3-2V5L4 7zM8 5h2v2H8z"/>
+        </g>
+    </svg>
+    <svg id="video-close-bluee79" width="34" height="34" viewBox="-1 -1 34 34" x="34">
+        <style>.esst0{fill:#00a4ff}</style>
+        <path id="esXMLID_1_" transform="rotate(45.001 16.021 16)" class="esst0" d="M15-2.4h2v36.7h-2z"/>
+        <path id="esXMLID_2_" transform="rotate(134.999 16.02 16)" class="esst0" d="M15-2.4h2v36.7h-2z"/>
+    </svg>
+    <svg id="video-close-white956" width="34" height="34" viewBox="-1 -1 34 34">
+        <style>.etst0{fill:#fff}</style>
+        <path id="etXMLID_1_" transform="rotate(45.001 16.021 16)" class="etst0" d="M15-2.4h2v36.7h-2z"/>
+        <path id="etXMLID_2_" transform="rotate(134.999 16.02 16)" class="etst0" d="M15-2.4h2v36.7h-2z"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="video-service-white9b5" x="126" y="132">
+        <title>视频服务-16px</title>
+        <path d="M6 5l5.196 3L6 11V5zm2 9c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6zM0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8z"
+              fill="#FFF" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="video-servicee7e" x="108" y="132">
+        <title>视频服务-16px</title>
+        <path d="M6 5l5.196 3L6 11V5zm2 9c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6zM0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8z"
+              fill="#0052D9" fill-rule="evenodd"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="voice-technology-white816" x="140" y="108">
+        <title>语音技术-16px</title>
+        <path d="M13 13v-3h2v5h-5v-2h3zM3 13h3v2H1v-5h2v3zM15 3v3h-2V3h-3V1h5v2zM3 3v3H1V1h5v2H3zm1 3h2v4H4V6zm3-2h2v8H7V4zm3 2h2v4h-2V6z"
+              fill="#FFF" fill-rule="nonzero"/>
+    </svg>
+    <svg width="18" height="18" viewBox="-1 -1 18 18" id="voice-technologye7a" x="140" y="90">
+        <title>语音技术-16px</title>
+        <path d="M13 13v-3h2v5h-5v-2h3zM3 13h3v2H1v-5h2v3zM15 3v3h-2V3h-3V1h5v2zM3 3v3H1V1h5v2H3zm1 3h2v4H4V6zm3-2h2v8H7V4zm3 2h2v4h-2V6z"
+              fill="#0052D9" fill-rule="nonzero"/>
+    </svg>
+</svg>

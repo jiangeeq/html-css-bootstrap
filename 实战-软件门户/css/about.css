@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.mod-hero{
+    height: 800px;
+    background-color: #f3f5f8;
+    background-image: url("../images/about/bg-banner-pc.png");
+    background-size: 1920px 800px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    position: relative;
+    transition: all .4s;
+}
+
+.pls-db-ctn{
+    padding-top: 80px;
+    margin-left: 332px;
+    height: 100%;
+    max-width: 640px;
+    left: 50%;
+}
+
+@keyframes mod-hero-move {
+    0%{
+        margin-left: -962px;
+    }
+    50%{
+        margin-left: 60px;
+    }
+    100%{
+        margin-left: 864px;
+    }
+}
+.mod-hero:hover:before{
+    animation-play-state: paused;
+}
+.mod-hero:before{
+    animation: mod-hero-move 4s infinite linear;
+    animation: mod-hero-move 4s infinite linear;
+    left: 50%;
+    margin-left: -962px;
+    background: linear-gradient(90deg,#f3f5f8 0,rgba(243,245,248,0));
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    box-sizing: border-box;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.pls-db-title{
+    line-height: 84px;
+    font-size: 60px;
+    color: #252c3a;
+    font-weight: 500;
+    margin: 0;
+}
+
+.pls-db-subtitle{
+    margin-top: 8px;
+    line-height: 40px;
+    font-size: 28px;
+    color: #252c3a;
+}
+
+.mod-hero__player-btn{
+    position: relative;
+    display: inline-block;
+    vertical-align: 6px;
+    padding: 4px 12px 4px 32px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #ffffff;
+    border-radius: 16px;
+    background-color: #0354d9;
+    margin-left: 20px;
+}
+.mod-hero__player-btn:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/about/About-202112061442.svg);
+    background-position: 0.5599999999999999% 20.71%;
+    background-size: 841.6666666666666% 804.1666666666666%;
+    background-repeat: no-repeat;
+}
+
+.pls-db-txt{
+    margin-top: 40px;
+    line-height: 28px;
+    font-size: 16px;
+    color: #495770;
+    text-align: justify;
+}
