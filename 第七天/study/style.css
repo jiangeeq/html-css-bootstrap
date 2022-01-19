@@ -1,0 +1,366 @@
+/* 把我们所有标签的内外边距清零 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*这个页面的版心是 1200 像素，每个版心都要水平居中对齐，可以定义版心为公共类*/
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.header {
+    height: 42px;
+    /* background-color: pink; */
+    /* 注意此地方会层叠 w 里面的margin */
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    /*此元素将显示为块级元素，此元素前后会带有换行符。*/
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.nav ul li a:hover {
+    /*把下边框的所有属性设置到一个声明中*/
+    border-bottom: 2px solid #00c244;
+    color: #00a4ff;
+}
+
+/* search搜索模块 */
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    margin-left: 70px;
+}
+
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    /*去掉右边的边框*/
+    border-right: 0;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    /* 按钮button默认有个边框需要我们手动去掉 */
+    border: 0;
+    background: url(images/btn.png);
+}
+
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666;
+}
+.user img{
+    vertical-align: middle;
+}
+/* banner区域 */
+/* 1 号盒子是通栏的大盒子 banner，不给宽度，给高度，给一个蓝色背景*/
+.banner {
+    height: 421px;
+    background-color: #1c036c;
+}
+
+/* 2 号盒子是版心，要水平居中对齐*/
+.banner .w {
+    height: 421px;
+    background: url(../img/banner2.png) no-repeat top center;
+}
+
+/* 3 号盒子版心内，左对齐 subnav 侧导航栏*/
+.subnav {
+    float: left;
+    width: 190px;
+    height: 421px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.subnav ul li {
+    height: 45px;
+    /*设置行间的距离（行高）。*/
+    line-height: 45px;
+    padding: 0 20px;
+}
+
+.subnav ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.subnav ul li a span {
+    float: right;
+}
+
+.subnav ul li a:hover {
+    color: #00a4ff;
+}
+
+/* 4 号盒子版心内，右对齐 course 课程*/
+.course {
+    float: right;
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+    /* 浮动的盒子不会有外边距合并的问题 */
+    margin-top: 50px;
+}
+
+.course h2 {
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.bd {
+    padding: 0 20px;
+}
+
+.bd ul li {
+    padding: 14px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.bd ul li h4 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+.bd ul li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.bd .more {
+    display: block;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 38px;
+    color: #00a4ff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* 精品推荐模块 */
+/* 大盒子水平居中 goods 精品，注意此处有个盒子阴影*/
+.goods {
+    height: 60px;
+    background-color: #fff;
+    margin-top: 10px;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+    /* 行高会继承， 会继承给3个孩子 */
+    line-height: 60px;
+}
+
+/* 1 号盒子是标题 H3 左侧浮动*/
+.goods h3 {
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+/* 2 号盒子里面放链接左侧浮动， goods-item 距离可以控制链接的左右外边距（注意行内元素只给左右内外边距）*/
+.goods ul {
+    float: left;
+    margin-left: 30px;
+}
+
+.goods ul li {
+    float: left;
+}
+
+.goods ul li a {
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+    border-left: 1px solid #ccc;
+}
+
+/*3 号盒子右浮动 mod 修改*/
+.mod {
+    float: right;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+/* 1 号盒子为最大的盒子， box 版心水平居中对齐*/
+.box {
+    margin-top: 30px;
+}
+
+.box-hd {
+    height: 45px;
+}
+
+/*2 号盒子为上面部分，box-hd -- 里面左侧标题 H3 左浮动，*/
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+/*右侧链接 a 右浮动*/
+.box-hd a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+/* 宽度为 1215 就可以一行装开 5 个 li */
+.box-bd ul {
+    width: 1225px;
+}
+
+/* 3 号盒子为底下部分，box-bd -- 里面是无序列表，有 10 个小 li 组成*/
+.box-bd ul li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+
+.box-bd ul li img {
+    width: 100%;
+}
+
+.box-bd ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+}
+
+.box-bd .info {
+    margin: 0 20px 0 25px;
+    font-size: 12px;
+    color: #999;
+}
+
+.box-bd .info span {
+    color: #ff7c2d;
+}
+
+/* footer 模块 */
+/* 1 号盒子是通栏大盒子，底部 footer 给高度，底色是白色*/
+.footer {
+    height: 415px;
+    background-color: #fff;
+}
+
+/* 2 号盒子版心水平居中*/
+.footer .w {
+    padding-top: 35px;
+}
+
+/* 3 号盒子版权 copyright 左对齐*/
+.copyright {
+    float: left;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: #666;
+    margin: 20px 0 15px 0;
+}
+
+.copyright .app {
+    display: block;
+    width: 118px;
+    height: 33px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 33px;
+    color: #00a4ff;
+    font-size: 16px;
+}
+
+/* 4 号盒子链接组 links 右对齐*/
+.links {
+    float: right;
+}
+
+.links dl {
+    float: left;
+    margin-left: 100px;
+}
+
+.links dl dt {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.links dl dd a {
+    color: #333;
+    font-size: 12px;
+}

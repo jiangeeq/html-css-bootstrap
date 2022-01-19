@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>综合案例-五彩导航</title>
+    <style>
+        .nav a {
+            display: inline-block;
+            width: 120px;
+            height: 58px;
+            background-color: pink;
+            text-align: center;
+            line-height: 58px;
+            color: #fff;
+            /* 规定添加到文本的修饰,修饰的颜色由 "color" 属性设置。*/
+            text-decoration: none;
+        }
+
+        .nav .bg1 {
+            /*background: 背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置;*/
+            background: url(images/bg1.png) no-repeat;
+        }
+
+        .nav .bg1:hover {
+            background-image: url(images/bg11.png);
+        }
+
+        .nav .bg2 {
+            background: url(images/bg2.png) no-repeat;
+        }
+
+        .nav .bg2:hover {
+            background-image: url(images/bg22.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#" class="bg1">五彩导航</a>
+        <a href="#" class="bg2">五彩导航</a>
+        <a href="#">五彩导航</a>
+        <a href="#">五彩导航</a>
+        <a href="#">五彩导航</a>
+    </div>
+</body>
+
+</html>

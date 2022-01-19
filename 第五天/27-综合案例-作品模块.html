@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: #bbbbbb;
+    }
+    a {
+        text-decoration: none;
+    }
+    .box{
+        width: 260px;
+        height: 345px;
+        background-color: #ffffff;
+    }
+    .box > img{
+        width: 100%;
+        height: 195px;
+    }
+    .card-info{
+        height: 100px;
+        padding: 11px 16px 13px;
+        border-bottom: 1px solid #bbbbbb;
+    }
+    .card-info-title{
+        display: flex;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        position: relative;
+    }
+    .card-info-title a{
+        font-size: 14px;
+        color: #333;
+        display: inline-block;
+        float: left;
+        vertical-align: middle;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .card-info-title a:hover{
+        font-size: 14px;
+        color: orange;
+    }
+    .title-icon{
+        background-image: url("http://static.zcool.cn/git_z/build/images/svg/putongtuijian.svg?v=1");
+        background-size: auto 14px;
+        width: 14px;
+        height: 14px;
+        float: right;
+        margin-top: 3px;
+        display: inline-block;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: center top;
+        margin-left: -7px;
+    }
+    .card-info-type{
+        display: block;
+        margin: 0 0 17px;
+        color: #bbbbbb;
+        font-size: 12px;
+    }
+    .statistics-view::before{
+        background: url("https://static.zcool.cn/git_z/build/images/svg/card-liulan.svg?v=1") 0 4px no-repeat;
+        background-size: 16px auto;
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: top;
+        margin-right: 5px;
+    }
+    .card-info-item span[class^="statistics"] {
+        margin-right: 7px;
+        font-size: 12px;
+        color: #bbbbbb;
+        cursor: default;
+    }
+    .card-user{
+        height: 50px;
+        padding: 0 16px;
+        display:flex;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        position: relative;
+        background-color: #ffffff;
+    }
+    .user-avatar{
+        display: inline-block;
+        margin-top: 7px;
+    }
+    .user-avatar > a{
+        width: 150px;
+        line-height: 24px;
+        font-size: 12px;
+        color: #333;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        /*display: block;*/
+    }
+    .user-avatar > a >img {
+        border-radius: 50%;
+        margin-right: 10px;
+        width: 24px;
+        height: 24px;
+        border: none;
+        vertical-align: middle;
+    }
+    .time{
+        line-height: 50px;
+        font-size: 12px;
+        float: right;
+        color: #bbbbbb;
+    }
+</style>
+<body>
+    <div class="box">
+        <img src="images/img.png">
+        <div class="card-info">
+            <p class="card-info-title">
+                <a href="#">良屋租房APP</a>
+                <span class="title-icon"></span>
+            </p>
+            <p class="card-info-type">UI-APP界面</p>
+            <p class="card-info-item">
+                <span class="statistics-view">6679</span>
+                <span class="statistics-view">42</span>
+                <span class="statistics-view">79</span>
+            </p>
+        </div>
+        <div class="card-user">
+            <span class="user-avatar">
+                <a>
+                    <img src="https://img.zcool.cn/community/01f8d35cb18861a8012141685805ac.jpg@80w_80h_1c_1e_1o_100sh.jpg">
+                    清溪马桥
+                </a>
+            </span>
+            <span class="time">2年前</span>
+        </div>
+    </div>
+</body>
+</html>

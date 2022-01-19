@@ -1,0 +1,319 @@
+html {
+    font-family: 'pingfang SC', 'helvetica neue', arial, 'hiragino sans gb', 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.multi-tabs-bar {
+    width: 1180px;
+    height: 104px;
+    padding: 20px 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #dddd;
+}
+
+.multi-tabs-bar li {
+    float: left;
+}
+
+.multi-tabs-bar .item {
+    width: 128px;
+    padding: 0 20px 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    color: #3d485d;
+}
+
+.multi-tabs-bar .item-icon {
+    width: 60px;
+    height: 60px;
+    margin: 6px auto;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position-x: 0;
+    background-position-y: -1440px;
+    animation: tpm-product-multi__icon-leave .5s steps(24) forwards;
+}
+
+.multi-tabs-bar .item-icon:hover {
+    animation: tpm-product-multi__icon-enter .5s steps(24) forwards;
+
+}
+
+.multi-tabs-bar .item:hover {
+    color: #0052d9;
+    font-weight: 500;
+    border-bottom: 3px solid;
+    border-bottom-color: #0052d9;
+}
+
+@keyframes tpm-product-multi__icon-leave {
+    0% {
+        background-position: 0 -1440px
+    }
+
+    to {
+        background-position: 0 0
+    }
+}
+
+@keyframes tpm-product-multi__icon-enter {
+    0% {
+        background-position: 0 0
+    }
+
+    to {
+        background-position: 0 -1440px
+    }
+}
+
+.customer{
+    height: auto;
+}
+
+.customer .section-hd {
+    margin: 40px 0 40px 0;
+}
+
+.customer .section-hd h2 {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.customer .section-sub {
+    width: 500px;
+    margin: 10px auto;
+}
+
+.customer .section-sub span {
+    font-size: 14px;
+    color: #3d485d;
+}
+
+.customer .section-sub .tp-link__inner {
+    width: 130px;
+    color: #0052d9;
+    font-size: 14px;
+}
+
+.section-sub .tp-link__inner:after {
+    display: inline-block;
+    content: '';
+    width: 6px;
+    height: 10px;
+    margin-left: 6px;
+    background-image: url("../images/tpm-link-arrowd42.svg");
+}
+.tp-link__inner:hover::after {
+    display: inline-block;
+    content: '';
+    width: 6px;
+    height: 10px;
+    transform: translateX(5px);
+    transition: transform .4s;
+    background-image: url("../images/tpm-link-arrowd42.svg");
+}
+
+
+
+.lazyload-wrapper{
+    width: 1200px;
+    height: 230px;
+    padding: 0 80px;
+    margin: 0 auto;
+    position: relative;
+}
+.tpm-case-card__list .swiper-slide{
+    float: left;
+    width: 310px;
+    height: 136px;
+    margin: 0 12px;
+    padding: 53px 32px 10px 32px;
+    background-image: linear-gradient(
+            0deg,#fff,#f3f5f8);
+    box-shadow: 8px 8px 20px 0 rgba(55 99 170 / 10%), -8px -8px 20px 0 #fff;
+    border-radius: 4px;
+    position: relative;
+}
+.swiper-slide .case-card-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    /*不对针事件做出反应*/
+    pointer-events: none;
+    background: url(../images/bg6e5.png) 0 100% no-repeat;
+    background-size: auto 100%;
+    /*透明度级别：*/
+    opacity: 0;
+    transition: all .3s linear;
+}
+.swiper-slide a:hover .case-card-bg{
+    opacity: 1;
+}
+
+.swiper-slide .info{
+    z-index: 1;
+    position: relative;
+}
+.swiper-slide a img{
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.swiper-slide a span{
+    font-size: 16px;
+    color: #293957;
+    overflow: hidden;
+    /*在多行文本情况下，用省略号隐藏超出范围的文本*/
+    text-overflow: ellipsis;
+    /*必须结合的属性，将对象作为弹性盒子模型显示*/
+    display: -webkit-box;
+    /*设置或检索盒子对象的子元素排列方式*/
+    -webkit-box-orient: vertical;
+    /*将块容器的文字限制为指定的行数，并用省略号填充尾部*/
+    -webkit-line-clamp: 3;
+
+}
+.swiper-slide a span:before{
+    content: "";
+    position: absolute;
+    top: -25px;
+    z-index: -1;
+    width: 57px;
+    height: 46px;
+    background-image: url("../images/quotee79.svg");
+}
+
+.swiper-slide .source{
+    font-size: 16px;
+    color: #293957;
+    text-align: right;
+    margin-top: 24px;
+}
+
+.swiper-btn-prev {
+    position: absolute;
+    left: 20px;
+    /*margin-left: 50px;*/
+}
+.swiper-btn-prev:after {
+    background-image: url(../images/btn-prevda0.svg);
+}
+.swiper-btn-next {
+    position: absolute;
+    right: 20px;
+    /*margin-left: 50px;*/
+}
+.swiper-btn-next:after {
+    background-image: url(../images/btn-nextd68.svg);
+}
+
+.swiper-btn{
+    display: flex;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -39px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 0;
+    background-image: linear-gradient(0deg,#fff,#f3f5f8);
+    border: 2px solid #fff;
+    box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 10%), -8px -8px 20px 0 #fff;
+}
+.swiper-btn:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*层级提高*/
+    z-index: 2;
+    margin: -5px 0 0 -3px;
+    width: 6px;
+    height: 10px;
+}
+.swiper-btn-inner {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 16%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-btn-inner:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: linear-gradient(
+            135deg,#dbe2e9,#fff);
+}
+
+.logo-card-multi{
+    width: 100%;
+}
+
+.logo-card-multi img{
+    width: 160px;
+    height: 40px;
+}
+.logo-card-multi ul{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /*writing-mode: horizontal-tb;*/
+}
+.logo-card-multi ul li{
+    flex: 1;
+    width: 20%;
+    min-width: 20%;
+    max-width: 20%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 6px 12px;
+}
+
+.logo-card-multi li a{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    height: 80px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 10%), -8px -8px 20px 0 #fff, inset 0 4px 20px 0 hsl(0deg 0% 100% / 50%);
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+}
+.logo-card-multi li a:hover{
+    box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 20%), -8px -8px 20px 0 #fff;
+}
