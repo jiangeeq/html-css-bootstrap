@@ -34,11 +34,11 @@
     }
 }
 .mod-hero:hover:before{
-    animation-play-state: paused;
+    animation: mod-hero-move 4s infinite linear;
+    /*animation-play-state: paused;*/
 }
 .mod-hero:before{
-    animation: mod-hero-move 4s infinite linear;
-    animation: mod-hero-move 4s infinite linear;
+    /*animation: mod-hero-move 4s infinite linear;*/
     left: 50%;
     margin-left: -962px;
     background: linear-gradient(90deg,#f3f5f8 0,rgba(243,245,248,0));
