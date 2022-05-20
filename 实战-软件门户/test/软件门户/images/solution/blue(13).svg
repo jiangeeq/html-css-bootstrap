@@ -1,0 +1,12 @@
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <title>微信音视频</title>
+  <path d="M29,29H4V3H21v7h8ZM28.14,8H23V3.88ZM31,8,23,1H2V31H31V8Z" style="fill: #0052d9"/>
+  <rect x="3.406" y="8.021" width="3.625" height="2" style="fill: #0052d9"/>
+  <rect x="3.406" y="15" width="3.625" height="2" style="fill: #0052d9"/>
+  <rect x="3.406" y="22.021" width="3.625" height="2" style="fill: #0052d9"/>
+  <rect x="26.031" y="15.021" width="3.552" height="2" style="fill: #0052d9"/>
+  <rect x="26.031" y="22.021" width="3.552" height="2" style="fill: #0052d9"/>
+  <path d="M14.552,15.1l3.165,1.934-3.165,1.934V15.1m-2-3.566v11l9-5.5-9-5.5Z" style="fill: #0052d9"/>
+  <polygon points="8 2.771 6 2.771 6 29.521 8 29.521 8 2.771 8 2.771" style="fill: #0052d9"/>
+  <polygon points="27 9.07 25 9.07 25 29.521 27 29.521 27 9.07 27 9.07" style="fill: #0052d9"/>
+</svg>

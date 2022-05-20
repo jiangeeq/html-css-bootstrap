@@ -1,0 +1,865 @@
+.top-ad {
+    background-color: #ffffff;
+}
+
+.top-ad img {
+    width: 100%;
+}
+
+/**1.头部区域 start**/
+.header {
+    height: 72px;
+    /* 粘性定位 */
+    position: sticky;
+    /*指定 top, right, bottom 或 left 四个阈值其中之一，才可使粘性定位生效*/
+    top: 0;
+    z-index: 99;
+    background-color: #ffffff;
+}
+
+.header .container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.header .logo {
+    float: left;
+    margin: 0 20px;
+}
+
+.header .logo img {
+    width: 126px;
+    height: 72px;
+}
+
+.header .nav ul li {
+    float: left;
+}
+
+.header .nav ul li a {
+    height: 71px;
+    line-height: 71px;
+    float: left;
+    padding: 0 16px;
+    font-size: 16px;
+    color: #545c63;
+    text-align: center;
+}
+
+.header .nav ul li:hover a {
+    color: #0f0f0f;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.new-wrap {
+    position: relative;
+}
+
+.new-wrap .icon-new {
+    display: inline-block;
+    width: 14px;
+    height: 10px;
+    background: url("../images/new2.png") no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    font-size: 8px;
+    top: 16px;
+    right: 1px;
+}
+
+.search {
+    float: left;
+    width: 324px;
+    height: 72px;
+    margin-left: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.search-area {
+    position: relative;
+    width: 100%;
+}
+
+.search-area input {
+    float: left;
+    width: 288px;
+    height: 40px;
+    padding: 8px 12px;
+    color: #8e959d;
+    border: 0;
+    background-color: #efefef;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.search-area .hot-tag {
+    position: absolute;
+    top: 0;
+    right: 32px;
+}
+
+.search-area .hot-tag a {
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    font-size: 14px;
+    color: #9199a1;
+    margin-top: 8px;
+    overflow: hidden;
+    /* 文字用省略号替代超出的部分*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 4px 8px;
+}
+
+.search-btn {
+    float: left;
+    height: 40px;
+    width: 35px;
+    background-color: #efefef;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    text-align: center;
+}
+
+.search-btn button {
+    width: 20px;
+    height: 24px;
+    border: 0;
+    padding: 0 8px;
+    background: url(../images/search.png) no-repeat;
+    background-size: 20px 24px;
+    cursor: pointer;
+    margin-top: calc(50% - 11px);
+}
+
+.login-area {
+    float: right;
+}
+
+.login-area ul li {
+    float: left;
+    height: 71px;
+}
+
+.login-area ul li a {
+    color: #1c1f21;
+    font-size: 16px;
+    /*对应li的高*/
+    line-height: 71px;
+    padding: 0 12px;
+}
+
+.login-area a:hover {
+    color: orange;
+}
+
+.cart-icon {
+    width: 18px;
+    height: 18px;
+    margin-top: calc(50% + 5px);
+    background: url("../images/shopcar.png") no-repeat;
+    background-size: 18px 18px;
+}
+
+.cart-icon:hover {
+    background: url("../images/shopcar-active.png") no-repeat;
+    background-size: 18px 18px;
+}
+
+
+/**1.头部区域 end**/
+
+/**2.banner start**/
+.banner {
+    width: 100%;
+    height: 483px;
+    padding: 32px 0;
+    /*margin-top: 14px;*/
+    background: linear-gradient(#bed8ea, #5e7b8f, #5d91be);
+}
+
+.banner .nav {
+    float: left;
+    width: 256px;
+    height: 382px;
+    background-color: #39364d;
+    border-top-left-radius: 10px;
+}
+
+.banner .nav ul {
+    margin: 10px 0;
+}
+
+.banner .nav ul li {
+    box-sizing: border-box;
+    width: 256px;
+    height: 50px;
+    line-height: 45px;
+    padding: 0 14px;
+    position: relative;
+}
+
+.banner .nav ul li .inner-box {
+    visibility: hidden;
+}
+
+.banner .nav ul li:hover .inner-box {
+    visibility: visible;
+}
+
+.banner .nav .inner-box {
+    position: absolute;
+    left: 256px;
+    width: 776px;
+    height: 382px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgb(7 17 27 / 10%);
+    border-radius: 0 12px 12px 0;
+    z-index: 2;
+    box-sizing: border-box;
+    top: -10px;
+}
+
+.nav .inner-box h2 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #1c1f21;
+    line-height: 22px;
+    font-weight: 700;
+
+}
+
+.nav .inner-box .inner-box-hd {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.inner-box .inner-box-hd .lore {
+    font-size: 12px;
+    line-height: 24px;
+    color: #6d7278;
+    margin-bottom: 8px;
+    /*display: flex;*/
+}
+
+.inner-box .inner-box-hd .lore span {
+    float: left;
+    color: #1c1f21;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.inner-box .inner-box-hd .lores a {
+    display: inline-block;
+    float: left;
+    color: #6d7278;
+    margin-right: 24px;
+}
+
+.inner-box .recomment{
+    padding: 35px 36px;
+    height: 222px;
+    background-color: #f3f5f6;
+    box-sizing: border-box;
+}
+
+.recomment-item {
+    float: left;
+    display: inline-block;
+    width: 350px;
+    margin-top: 20px;
+}
+
+.recomment-item .img{
+    float: left;
+    display: inline-block;
+    width: 90px;
+    height: 50px;
+    margin-right: 11px;
+    border-radius: 4px;
+    box-shadow: 0 6px 10px 0 rgb(95 101 105 / 15%);
+    background: url(../images/course-small.png) no-repeat center;
+    background-size: cover;
+}
+
+recomment-item .details {
+    align-items: center;
+    margin-bottom: 10px;
+}
+.title-box {
+    display: flex;
+    align-items: center;
+    width: 228px;
+    color: #1c1f21;
+}
+.title-box .text2 {
+    line-height: 1;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+}
+.title-box .tixi {
+    background-color: #e02020;
+    width: 2em;
+    color: #fff;
+    opacity: .6;
+    border-radius: 2px;
+    line-height: 1;
+    padding: 2px 4px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.discount-name{
+    font-size: 12px;
+    background-color: #e02020;
+    color: #fff;
+    opacity: .6;
+    border-radius: 2px;
+}
+.inner-box .price{
+    color: red;
+    font-weight: 600;
+    font-size: 12px;
+}
+.difficulty,.num{
+    color: #6d7278;
+    font-size: 12px;
+}
+
+.banner .nav ul li .title {
+    font: 14px "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.banner .nav ul li .sub-title {
+    font: 12px "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.triangle {
+    position: absolute;
+    right: 4px;
+    top: 20px;
+    float: left;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-left-color: #9199a1;
+}
+
+.banner .promo {
+    float: left;
+    width: 896px;
+    height: 382px;
+    position: relative;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.banner .promo img {
+    width: 896px;
+    height: 382px;
+}
+
+.banner .prev, .next {
+    position: absolute;
+    /* 绝对定位的盒子垂直居中 */
+    top: 50%;
+    margin-top: -15px;
+    /* 加了绝对定位的盒子可以直接设置高度和宽度 */
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #5e5e5e;
+}
+
+.prev {
+    left: 10px;
+    background: rgba(28, 31, 33, .1) url("../images/icon-left-small.png") no-repeat center/16px;
+}
+
+.next {
+    /* 如果一个盒子既有left属性也有right属性，则默认会执行 left属性 同理  top  bottom  会执行 top */
+    right: 10px;
+    background: rgba(28, 31, 33, .1) url("../images/icon-left-small.png") no-repeat center/16px;
+    transform: rotate(180deg);
+}
+
+.promo .promo-nav {
+    position: absolute;
+    bottom: 15px;
+    left: 80%;
+    width: 150px;
+    height: 13px;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 7px;
+}
+
+.promo .promo-nav li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 3px 5px;
+}
+
+.promo-nav li:nth-child(1) {
+    margin-left: 24px;
+}
+
+.promo-nav li[class^="selected"] {
+    width: 25px;
+    border-radius: 10px;
+}
+
+.bottom-nav {
+    height: 100px;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 1152px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .3);
+    border-radius: 0 0 8px 8px;
+}
+
+.bottom-nav ul li {
+    width: 192px;
+    height: 45px;
+    float: left;
+    margin-top: 28px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.bottom-nav .right-arrows {
+    transition: all .2s;
+}
+
+.bottom-nav li:hover .right-arrows {
+    transform: translateX(3px);
+}
+
+.bottom-nav ul li img {
+    float: left;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-size: cover;
+    transition: all .2s;
+}
+
+.bottom-nav ul li:hover img {
+    transform: translateY(-2px);
+}
+
+.bottom-nav ul li:hover h4 {
+    color: orangered;
+}
+
+.bottom-nav ul li h4 {
+    width: 139px;
+    font-size: 16px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.bottom-nav ul li p {
+    width: 139px;
+    font-size: 12px;
+    color: #545c63;
+    line-height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.line {
+    float: right;
+    height: 36px;
+    border: 1px solid #e8e8e8;
+    margin-top: -36px;
+}
+
+.bottom-nav ul li:last-child {
+    width: 94px;
+    font-size: 12px;
+}
+
+.bottom-nav ul li:last-child h4 {
+    margin-bottom: 0;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+.bottom-nav ul li:last-child p {
+    width: 100%;
+    text-align: center;
+}
+
+/**2.banner end**/
+
+/*3.课程区域开始啦*/
+.course .course-model {
+    height: 698px;
+    margin: 30px auto;
+}
+
+.course-model h3 {
+    background: url("../images/title-bg3.png") no-repeat left center/auto 29px;
+    height: 36px;
+    padding-left: 180px;
+    margin-bottom: 30px;
+}
+
+.menu li {
+    padding: 8px 14px;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.menu li a {
+    color: #545c63;
+}
+
+.menu li:hover a {
+    color: #000000;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orangered;
+}
+
+.course-model .data-list .item {
+    float: left;
+    width: 270px;
+    height: 272px;
+    margin: 0 24px 24px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 12px 20px 0 rgb(95 101 105 / 15%);
+    transition: all .2s;
+    position: relative;
+}
+
+.course-model .data-list .item:nth-child(4) {
+    margin-right: 0;
+}
+
+.course-model .data-list .item:last-child {
+    margin-right: 0;
+}
+
+.data-list .item:hover {
+    transform: translateY(-3px);
+}
+
+.data-list .item a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 25px;
+    z-index: 1;
+    background: url("../images/icon-new.png") no-repeat center/100%;
+}
+
+.data-list .item img {
+    width: 270px;
+    height: 152px;
+    margin-bottom: 8px;
+}
+
+.data-list .item .title {
+    height: 40px;
+    padding: 0 8px;
+    margin-bottom: 8px;
+    color: #545c63;
+    font: 14px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+}
+
+.data-list .item .prop {
+    padding: 0 8px;
+    margin-bottom: 8px;
+    color: #9199a1;
+    font-size: 12px;
+}
+
+.data-list .item .sale-promotion {
+    padding: 0 8px;
+    margin-bottom: 18px;
+}
+
+.data-list .item .sale-promotion .type i {
+    box-sizing: border-box;
+    font-size: 12px;
+    padding: 3px 4px;
+}
+
+.data-list .item .sale-promotion .type i:first-child {
+    background-color: orangered;
+    color: white;
+    border: 1px solid orangered;
+}
+
+.data-list .item .sale-promotion .type i:last-child {
+    border: 1px solid orangered;
+    background-color: white;
+    color: orangered;
+}
+
+.item .sale-promotion .new-price {
+    color: #f01414;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 2px;
+}
+
+.item .sale-promotion .old-price {
+    color: #6d7278;
+    margin-left: 4px;
+    text-decoration: line-through;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/*3.课程区域结束啦*/
+.study-map {
+    padding: 32px 0 0 8px;
+    height: 520px;
+    background-color: white;
+}
+
+.study-map .study-hd h3 {
+    background: url("../images/title-bg9.png") no-repeat left center/auto 29px;
+    height: 36px;
+    padding-left: 180px;
+    margin-bottom: 30px;
+}
+
+.study-map .study-hd a {
+    color: #6d7278;
+    line-height: 36px;
+    font-weight: normal;
+}
+
+.study-map .study-hd a:hover {
+    color: #1c1f21;
+    font-weight: 500;
+}
+
+.study-map .study-bd .study-info {
+    float: left;
+    width: 368px;
+    margin: 0 24px 24px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 12px 20px 0 rgb(95 101 105 / 15%);
+    transition: all .2s;
+}
+
+.study-bd .study-info:nth-child(3) {
+    margin-right: 0;
+}
+
+.study-bd .study-info:last-child {
+    margin-right: 0;
+}
+
+.study-info:hover {
+    transform: translateY(-3px);
+}
+
+.study-info img {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+.study-info .desc {
+    font-size: 14px;
+    color: #545c63;
+    line-height: 20px;
+    padding: 0 8px;
+    width: 368px;
+    height: 40px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.study-map .study-bd .study-info .bottom {
+    font-size: 12px;
+    color: #9199a1;
+    padding: 5px 10px 10px 10px;
+}
+
+
+.footer .cw {
+    padding: 36px 0;
+    margin: 0 auto;
+}
+
+.footer .footer-top-nav {
+    position: relative;
+}
+
+.footer-top-nav .copyright .beian {
+    background: url(../images/beian-icon.png) no-repeat 0 0;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 4px;
+    margin-top: -4px;
+}
+
+
+.footer-top-nav .share {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.footer-top-nav .share li {
+    float: left;
+    width: 50px;
+    height: 59px;
+    margin-right: 24px;
+}
+
+.footer-top-nav .share li:hover a{
+    background-color: #545c63;;
+}
+.footer-top-nav .share li a {
+    display: inline-block;
+    background-color: #b7bbbf;;
+    border-radius: 100px;
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+    margin: 0 9px;
+    position: relative;
+    text-align: center;
+}
+
+.footer-top-nav .share p {
+    font-size: 12px;
+    color: #545c63;
+    line-height: 17px;
+    margin-top: 10px;
+}
+
+.footer-top-nav .share img {
+    width: 32px;
+    height: 32px;
+    margin: 0 9px;
+    /*图片底侧空白缝隙解决方案*/
+    vertical-align: middle;
+}
+
+.link a {
+    display: inline-block;
+    width: 56px;
+    height: 28px;
+    margin-right: 24px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #545c63;
+    font-weight: 300;
+}
+
+.footer-top-nav .copyright {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 8px;
+    color: #93999f;
+    font-weight: 300;
+}
+
+.footer .footer-bottom-nav {
+    margin-top: 36px;
+}
+
+.footer-top-nav .share li:hover .footer-sns-favorites-tips{
+    display: block;
+}
+.footer-top-nav .share li:hover .footer-sns-weixin-expand{
+    display: block;
+}
+
+.footer-top-nav .share li span{
+    line-height: 32px;
+    font-size: 20px;
+    color: #fff;
+}
+.imv2-start1:before {
+    content: "\e838";
+}
+.footer-sns-favorites-tips{
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 240px;
+    padding: 12px 20px;
+    margin-left: -140px;
+    color: #545c63;
+    background-color: #fff;
+    box-shadow: 0 -8px 16px 0 rgb(7 17 27 / 20%);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: all .2s;
+    font-size: 12px;
+    line-height: 1;
+}
+.footer-sns-favorites-tips b{
+    font-size: 16px;
+    color: #f01414;
+}
+.imv2-star-revert{
+    font-size: 14px !important;
+    line-height: 1 !important;
+    color: #545c63 !important;
+}
+
+.imv2-weixin11:before{
+    content: "\e654";
+}
+.imv2-star-revert:before{
+    content: "\e638";
+}
+
+.footer-sns-weixin-expand  {
+    position: absolute;
+    display: none;
+    width: 160px;
+    height: 200px;
+    left: -62px;
+    bottom: 40px;
+    background: url("../images/elevator.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    box-shadow: 0 -8px 16px 0 rgb(7 17 27 / 20%);
+    border-radius: 8px;
+}

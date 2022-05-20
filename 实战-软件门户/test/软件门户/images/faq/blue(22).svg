@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>内容分发网络 16_blue</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="内容分发网络" transform="translate(0.000000, 0.064941)">
+            <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+            <path d="M1,4.001 L8,8 L8,16 L1,12.001 L1,4.001 Z M4.999,2.001 L12,6 L12,14.001 L10,12.857 L10,7.159 L4.999,4.302 L4.999,2.001 Z M3,7.4469319 L3,10.840211 L6,12.5540681 L6,9.16078904 L3,7.4469319 Z M9,0 L16,4.001 L16,12.001 L13.999,10.858 L13.999,5.159 L9,2.302 L9,0 Z" id="Combined-Shape" fill="#0052D9" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

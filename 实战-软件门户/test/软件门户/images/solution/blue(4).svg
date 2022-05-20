@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<rect x="9" y="14" style="fill-rule:evenodd;clip-rule:evenodd;fill:#0052d9;" width="2" height="2"/>
+<rect x="9" y="10" style="fill-rule:evenodd;clip-rule:evenodd;fill:#0052d9;" width="4" height="2"/>
+<rect x="9" y="6" style="fill-rule:evenodd;clip-rule:evenodd;fill:#0052d9;" width="4" height="2"/>
+<g>
+	<g>
+		<defs>
+			<polygon id="SVGID_41_" points="27,25 27,1 5,1 5,31 27,31 27,29 7,29 7,3 25,3 25,25 			"/>
+		</defs>
+		<use xlink:href="#SVGID_41_"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;fill:#0052d9;"/>
+		<clipPath id="SVGID_1_">
+			<use xlink:href="#SVGID_41_"  style="overflow:visible;"/>
+		</clipPath>
+	</g>
+	<g>
+		<defs>
+			<rect id="SVGID_43_" x="14" y="23" width="4" height="2"/>
+		</defs>
+		<use xlink:href="#SVGID_43_"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;fill:#0052d9;"/>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_43_"  style="overflow:visible;"/>
+		</clipPath>
+	</g>
+</g>
+<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#0052d9;" d="M15,6v10l4.005-2.764L23,16V6H15z M21,12.501l-1.995-1.404
+	L17,12.501V8h4V12.501z"/>
+</svg>

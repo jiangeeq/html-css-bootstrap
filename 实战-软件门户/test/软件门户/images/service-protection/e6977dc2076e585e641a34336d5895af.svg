@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>服务支持</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0.100505063" width="16" height="16"></rect>
+        <rect id="path-3" x="0" y="0.100505063" width="16" height="16"></rect>
+        <rect id="path-5" x="0" y="0.100505063" width="16" height="16"></rect>
+    </defs>
+    <g id="服务支持" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组-10">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="矩形"></g>
+            <g id="分组-9" mask="url(#mask-2)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="矩形"></g>
+                <g id="分组-8" mask="url(#mask-4)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <g id="矩形"></g>
+                    <g id="分组-7" mask="url(#mask-6)" fill="#9BA6B7">
+                        <g transform="translate(7.999495, 6.000000) rotate(-45.000000) translate(-7.999495, -6.000000) translate(0.999495, -1.000000)" id="矩形">
+                            <path d="M2,12 L7,12 L7,4.5 C7,3.11928813 5.88071187,2 4.5,2 C3.11928813,2 2,3.11928813 2,4.5 L2,12 Z M4.5,0 C6.98528137,-4.56538782e-16 9,2.01471863 9,4.5 L9,14 L0,14 L0,4.5 C-3.04359188e-16,2.01471863 2.01471863,4.56538782e-16 4.5,0 Z" fill-rule="nonzero"></path>
+                            <rect fill-rule="evenodd" x="3" y="9" width="1" height="5" rx="0.5"></rect>
+                            <rect fill-rule="evenodd" x="5" y="9" width="1" height="5" rx="0.5"></rect>
+                            <path d="M13.3485463,12.4069215 L13.3485463,10.8485463 C13.3485463,9.46783438 12.2292581,8.34854626 10.8485463,8.34854626 C9.46783438,8.34854626 8.34854626,9.46783438 8.34854626,10.8485463 L8.34854626,12.3410241 L13.3485463,12.4069215 Z M10.8485463,6.34854626 C13.3338276,6.34854626 15.3485463,8.36326488 15.3485463,10.8485463 L15.3485463,12.3604642 L6.34854626,12.6514537 L6.34854626,10.8485463 C6.34854626,8.36326488 8.36326488,6.34854626 10.8485463,6.34854626 Z" fill-rule="nonzero" transform="translate(10.848546, 9.500000) rotate(-270.000000) translate(-10.848546, -9.500000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <title>产品文档-01</title>
+  <g id="Page-1">
+    <g id="常见问题总览页">
+      <g id="产品文档-01">
+        <path id="Shape" d="M39,19V2H2V46H40a6.018,6.018,0,0,0,6-6V19ZM37,44H4V4H37Zm7-4a4.012,4.012,0,0,1-4,4H39V21h5Z" style="fill: #7c848e"/>
+        <path id="Shape-2" data-name="Shape" d="M16,13v4H11V13Zm2-2H9v8h9Z" style="fill: #7c848e"/>
+        <path id="Shape-3" data-name="Shape" d="M30,31v4H11V31Zm2-2H9v8H32Z" style="fill: #7c848e"/>
+        <polygon id="Shape-4" data-name="Shape" points="32 23 9 23 9 25 32 25 32 23" style="fill: #7c848e"/>
+        <polygon id="Shape-5" data-name="Shape" points="32 17 22 17 22 19 32 19 32 17" style="fill: #7c848e"/>
+        <polygon id="Shape-6" data-name="Shape" points="32 11 22 11 22 13 32 13 32 11" style="fill: #7c848e"/>
+      </g>
+    </g>
+  </g>
+</svg>

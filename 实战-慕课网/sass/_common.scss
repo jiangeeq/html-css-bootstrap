@@ -1,0 +1,109 @@
+$color-primary: #55c57a;
+$cw-width: 1152px;
+
+/* 把我们所有标签的内外边距清零 */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/*版心*/
+.cw {
+    width: $cw-width;
+    margin: 0 auto;
+}
+
+a {
+    /*这样a标签内有图片就可以被撑开*/
+    display: inline-block;
+    list-style: none;
+    /*无下划线*/
+    text-decoration: none;
+    color: black;
+    /*-webkit-tap-highlight-color: transparent;*/
+    &:visited {
+        color: transparent;
+    }
+}
+
+em, i {
+    /*去除斜体*/
+    font-style: normal
+}
+
+body {
+    font: 14px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+    background-color: #f3f5f7;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.clearfix {
+    zoom: 1;
+    &::after {
+        content: '';
+        display: block;
+        height: 0;
+        visibility: hidden;
+        clear: both;
+    }
+}
+
+.ellipsis2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.left {
+    display: block;
+    float: left;
+}
+
+.right {
+    display: block;
+    float: right;
+}
+
+@mixin fontStyle {
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+/* 字体声明 */
+@font-face {
+    font-family: 'imv2';
+    src:  url('../fonts/imv2.eot?36dna0');
+    src:  url('../fonts/imv2.eot?36dna0#iefix') format('embedded-opentype'),
+    url('../fonts/imv2.ttf?36dna0') format('truetype'),
+    url('../fonts/imv2.woff?36dna0') format('woff'),
+    url('../fonts/imv2.svg?36dna0#imv2') format('svg');
+    @include fontStyle()
+}
+
+[class^="imv2-"],[class*="imv2-"] {
+    font-family: 'imv2' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    font-feature-settings: "liga";
+    -webkit-font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
