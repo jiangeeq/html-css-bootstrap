@@ -1,0 +1,357 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="zh-cn">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Checkout example · Bootstrap v5.1</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
+    <!-- Bootstrap core CSS -->
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .over {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .tempContainer {
+            position: fixed;
+            width: 100%;
+            margin-right: 0px;
+            margin-left: 0px;
+            text-align: center;
+            z-index: 101;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .container {
+            max-width: 960px;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="over"></div><!--背景层-->
+<div class="container">
+
+    <main>
+        <div class="py-5 text-center .invisible">
+            <h2>花鸭用户放款申请</h2>
+            <p class="lead">用户线下申请，财务线下放款后在这里做系统记录</p>
+        </div>
+        <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary">上传附属文件</span>
+                    <span class="badge bg-primary rounded-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div class="form-group">
+                            <label for="inputFrontIdCard">委托代扣协议</label>
+                            <input type="file" accept="image/*" class="form-control-file" id="inputFrontIdCard"
+                                   data-fileType="1" onchange="postFiles(this)" required>
+                            <div class="invalid-feedback">委托代扣协议 invalid custom file feedback</div>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div class="form-group">
+                            <label for="inputBackIdCard">个人信息查询及使用授权协议</label>
+                            <input type="file" accept="image/*" class="form-control-file" id="inputBackIdCard"
+                                   data-fileType="2" onchange="postFiles(this)" required>
+                            <div class="invalid-feedback">个人信息查询及使用授权协议 invalid custom file feedback</div>
+                        </div>
+
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div class="form-group">
+                            <label for="inputLoanContract">借款合同</label>
+                            <input type="file" accept=".pdf" class="form-control-file" id="inputLoanContract"
+                                   data-fileType="3" onchange="postFiles(this)" required>
+                            <div class="invalid-feedback">借款合同 invalid custom file feedback</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-7 col-lg-8">
+                <form id="formId" class="needs-validation" novalidate>
+
+                    <input type="text" name="gid" th:value="${gid}" hidden>
+                    <h4 class="mb-3">放款申请</h4>
+                    <div class="form-group row">
+                        <label for="inputAmount" class="col-sm-2 col-form-label">金额</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" name="amount" id="inputAmount" placeholder="请填入金额"
+                                   required>
+                            <div class="invalid-feedback">
+                                name is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputProduct" class="col-sm-2 col-form-label">贷款产品</label>
+                        <div class="col-sm-5">
+                            <select name="productCode" class="form-control" id="inputProduct" required>
+                                <div th:if="${produtList == null}">
+                                    <option value="" selected>请选择贷款产品</option>
+                                </div>
+                                <div th:if="${produtList != null}" th:each="p:${produtList}">
+                                    <option th:value="${p.code}" th:text="${p.name}"
+                                            th:onclick="setPeriod('[[${p.period}]]')"></option>
+                                </div>
+                            </select>
+                            <div class="invalid-feedback">
+                                贷款产品 is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPeriod" class="col-sm-2 col-form-label">期数</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" name="period" id="inputPeriod"
+                                   readonly required>
+                            <div class="invalid-feedback">
+                                期数 is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputBankNo" class="col-sm-2 col-form-label">银行卡号</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" name="bankNo" id="inputBankNo"
+                                   placeholder="请填入银行卡号" required>
+                            <div class="invalid-feedback">
+                                银行卡号 is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="inputBankPhone" class="col-sm-2 col-form-label">银行预留手机号码</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" name="bankPhone" id="inputBankPhone"
+                                   placeholder="请填入银行预留手机号码"
+                                   required>
+                            <div class="invalid-feedback">
+                                银行预留手机号码 is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="confirmFlag" id="same-address" required>
+                        <label class="form-check-label" for="same-address">请确认阅读贷款协议，并同意平台规则，一切后果自行承担</label>
+                        <div class="invalid-feedback">
+                            请确认阅读贷款协议.
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+                    <div class="center-block">
+                        <button class="w-30 btn btn-primary btn-lg" type="submit" data-toggle="modal"
+                                data-target="#exampleModal">确认申请
+                        </button>
+                        <button class="w-30 btn btn-secondary btn-lg" type="reset">重置</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">确认申请贷款</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        用户线下申请，财务线下放款后在这里做系统记录 !
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" onclick="applyLoan()">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="attachmentModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">附属文件警告</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>您还有必要的文件未上传提交.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017–2021 Company Name</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+</footer>
+
+</div>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script>
+    // $('#exampleModal').modal({backdrop: 'static',keyboard: false})
+    // $('#exampleModal').modal('hide', alert('我不想操作了'))
+    // $('#exampleModal').on('hidden.bs.modal', function (e) {
+    //     alert('我不想操作了')
+    // });
+
+    (function () {
+        'use strict'
+        var forms = document.querySelectorAll('.needs-validation')
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        $('.form-control-file').change(function (event) {
+            let files = event.target.files, file;
+            if (files && files.length > 0) {
+                file = files[0];
+                if (file.type.match('image/*') != null) {
+                    if (file.size > 1024 * 1024 * 2) {
+                        alert('图片大小不能超过 2MB!');
+                        return false;
+                    }
+                    $('#' + event.target.id).next().remove();
+                    var URL = window.URL || window.webkitURL;
+                    var imgURL = URL.createObjectURL(file);
+                    $('#' + event.target.id).after(
+                        '<div class="logoImg amplifyImg"><!--注意：此处的amlifyImg不可少-->\n' +
+                        '    <img class="img-thumbnail" onclick="tobig(this)" src="' + imgURL +
+                        '"/>\n' +
+                        '</div>'
+                    );
+                }
+            }
+        });
+    })();
+
+
+    function setPeriod(period) {
+        $('#inputIdCardNo').val(period);
+    }
+
+    function postFiles(e) {
+        // var refs = document.getElementById('reFile')
+        const file = e.files[0]
+        //上传文件、图片类型一般以二进制传递
+        let formData = new FormData()
+        // 向 FormData 中添加新的属性值 append()方法
+        formData.append('file', file)
+        formData.append('type', e.dataset.filetype)
+        console.log(formData.get('file'))
+        $.ajax({
+            type: 'POST',
+            url: 'http://192.168.103.241:38080/app/mock/16/example/1646133343229',
+            data: formData,
+            contentType: "multipart/form-data",
+            success: function (result) {
+                console.log("ajax请求成功" + result.placeholder);
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log("ajax请求失败");
+                console.log("请求对象XMLHttpRequest: " + JSON.stringify(XMLHttpRequest));
+                console.log("错误类型textStatus: " + textStatus);
+                console.log("异常对象errorThrown: " + errorThrown);
+            }
+        });
+    };
+
+    // 获取url的中文或英文参数
+    function getUrlParam(name) {
+        name = name.replace(/[]/, "\[").replace(/[]/, "\[").replace(/[]/, "\\\]");
+        var regexS = "[\\?&]" + name + "=([^&#]*)";
+        var regex = new RegExp(regexS);
+        var results = regex.exec(window.parent.location.href);
+        if (results == null)
+            return "";
+        else {
+            return decodeURI(results[1]);
+        }
+    }
+
+    function applyLoan() {
+        if ($('.form-control-file').length > 0) {
+            $('#attachmentModal').modal('show')
+        }
+        $.ajax({
+            type: 'GET',
+            url: 'http://192.168.103.241:38080/app/mock/16/example/1646133343229',
+            data: $('#formId').serialize(),
+            dataType: 'json',
+            async: false, // true（异步）, false（同步）
+            cache: false,  // 是否在缓存中读取数据的读取
+            contentType: "application/json",
+            processData: false,  // https://www.cnblogs.com/webSnow/p/15702943.html
+            success: function (result) {
+                console.log("ajax请求成功" + result.placeholder);
+                $('#exampleModal').modal('hide')
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log("ajax请求失败");
+                console.log("请求对象XMLHttpRequest: " + JSON.stringify(XMLHttpRequest));
+                console.log("错误类型textStatus: " + textStatus);
+                console.log("异常对象errorThrown: " + errorThrown);
+            }
+        });
+    }
+</script>
+<script src="./jpCommon.js"></script>
+</body>
+</html>
